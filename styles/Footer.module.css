@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap');
+
+.footerBody {
+    padding: 30px 0;
+    border-top: 2px solid var(--footer-top-border-color);
+    margin-top: 30px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.footerBody .row {
+    display: flex;
+    flex-direction: row;
+    padding: 0 20px;
+}
+
+.row .rowLeft{
+    width: 30%;
+}
+.row .rowRight {
+    width: 70%;
+    text-align: end;
+}
+
+.row .rowLeft,
+.row .rowRight {
+    padding: 10px 100px;
+}
+
+.developer {
+    margin: 0 120px;
+    font-size: .8em;
+}
+
+.developer a {
+    text-decoration: none;
+    color: var(--body-link-color);
+}
+
+.developer a:hover {
+    text-decoration: underline;
+    color: var(--body-link-hover-color);
+}
+
+.footerIcon {
+    margin: 0 8px;
+    text-decoration: none;
+}
+
+.footerIcon .text {
+    color: var(--body-link-color);
+}
+
+.footerIcon .text:hover {
+    text-decoration: underline;
+    color: var(--body-link-hover-color);
+}
+
+@media all and (max-width:849px){
+    .footerBody {
+        margin-top: 0;
+    }
+
+    .footerBody .row {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footerBody .row .rowLeft,
+    .footerBody .row .rowRight {
+        display: block;
+        margin: auto;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .developer {
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 431px) {
+    .footerBody {
+        font-size: .7em;
+    }
+}
+
+@media all and (max-width: 338px) {
+    .footerBody {
+        font-size: .6em;
+    }
+}

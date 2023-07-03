@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 35px;
+    font-family: 'Mouse Memoirs', sans-serif;
+    padding: 10px 0;
+    background-color: var(--navbar-bg-color);
+}
+
+.navlist {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.navList .listItem {
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.navbarText.right:hover {
+    transform: rotate(-2deg) scale(1.05) translate(-4px, -7px);
+    transition: 0.1s;
+}
+.navbarText.left:hover {
+    transform: rotate(2deg) scale(1.05) translate(4px, -7px);
+    transition: 0.1s;
+}
+
+.navbarText.active:hover {
+    transform: none;
+}
+
+.navbarText {
+    color: var(--navbar-text-color);
+    display:inline-block;
+}
+
+.navbarText.active {
+    color: var(--navbar-text-active-color);
+    text-shadow: #919191 0 0 10px;
+}
+
+.navbarLogo {
+    border-radius: 50%;
+    height: 120px;
+    width: auto;
+    animation: logo-entry 1s ease-in-out 1s;
+}
+
+@keyframes logo-entry {
+    0%{transform: scale(0.96);}
+    20%{transform: scale(1.1);}
+    40%{transform: scale(0.58);}
+    60%{transform: scale(1.05);}
+    80%{transform: scale(1.01);}
+    100%{transform: scale(1);}
+}
+
+.menu {
+    padding: 2px;
+    cursor: pointer;
+    display: none;
+}
+
+.menuLine {
+    width: 30px;
+    height: 4px;
+    background-color: var(--hamburger-menu-color);
+    margin-bottom: 6px;
+    border-radius: 5px;
+}
+
+.menu:active .menuLine {
+    -webkit-animation: hamburger-anim 400ms ease-in-out;
+    animation: hamburger-anim 400ms ease-in-out alternate forwards;
+}
+
+@keyframes hamburger-anim {
+    0%{
+        transform: scale(0.96);
+    }
+    20%{
+        transform: scale(1.1);
+    }
+    40%{
+        transform: scale(0.58); /* 0.98 for small spring look */
+    }
+    60%{
+        transform: scale(1.05);
+    }
+    80%{
+        transform: scale(1.01);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdownMenu {
+    display: inline-block;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    font-size: initial !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.dropdownMenu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.dropdownItem {
+    background-color: var(--btn-bg-color);
+    display: block;
+    padding: 10px 10px;
+    cursor: pointer;
+    color: var(--btn-text-color);
+}
+
+.arrow {
+    border: solid var(--btn-text-color);
+    border-width: 0 3px 3px 0;
+    margin-left:5px;
+    display: inline-block;
+    padding: 3px;
+}
+  
+.btn:hover .arrow {
+    border-color: var(--body-hover-text-color);
+}
+  
+.down {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.dropdownItem:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.dropdown.hidden {
+    display:none;
+}
+
+@media all and (max-width: 930px) {
+    .navList{
+        display: block;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+    
+    .navbarLogo {
+        height: 80px;
+    }
+    
+    .menu {
+        display:block;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+    }
+    
+    .navList .listItem {
+        display: block;
+    }
+
+    .navList .listItem:hover {
+        background-color: var(--nav-list-hover-color);
+    }
+
+    .navList .listItem:hover a {
+        transform: none;
+    }
+    
+    .navList {
+        width: 100%;
+        text-align: right;
+        margin-top: 30px;
+        transition: 0.5s;
+        animation-name: navbar-slide-in;
+        animation-duration: .5s;
+        animation-iteration-count: 1;
+    }
+    @keyframes navbar-slide-in {
+        0% {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+        30%{
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);opacity:1;
+        }
+    }
+
+    .navLogoParent {
+        width: 100%;
+    }
+
+    .navLogoParent img {
+        margin-left: 30px;
+    }
+
+    .navListHidden {
+        display: none;
+    }
+
+    .dropdownMenu {
+        right: 0;
+    }
+}
