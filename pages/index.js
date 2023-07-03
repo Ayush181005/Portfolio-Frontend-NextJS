@@ -23,7 +23,7 @@ export default function Home() {
             <small>With single 'A' 😅😁</small>
           </div>
           <div className={styles.imgContainer}>
-            <Image src='/home-img.png' alt="Me" className={styles.homeImg} width={220} height={298} priority={true} />
+            <Image src='/home-img.png' alt="Me" className={styles.homeImg} width={220} height={298} priority />
           </div>
         </div>
       </main>

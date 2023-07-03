@@ -17,7 +17,7 @@ const Navbar = () => {
             <nav className={styles.navbar}>
                 <div className={styles.navLogoParent}>
                     <Link href="/">
-                        <Image src='/logo.jpg' alt="Logo" className={styles.navbarLogo} height={120} width={120} priority={true} />
+                        <Image src='/logo.jpg' alt="Logo" className={styles.navbarLogo} height={120} width={120} priority />
                     </Link>
                 </div>
                 <ul className={`${styles.navList} ${styles.navListHidden}`} id="nav-list">
