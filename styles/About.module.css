@@ -53,6 +53,11 @@
         font-size: 40px;
         margin-left: 0;
     }
+
+    .aboutmeImage {
+        width: 200px;
+        height: auto;
+    }
 }
 
 @media all and (max-width: 710px) {
