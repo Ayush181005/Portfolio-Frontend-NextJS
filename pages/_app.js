@@ -3,8 +3,10 @@ import Navbar from '@/components/Navbar';
 import '@/styles/globals.css';
 import Head from 'next/head';
 import NextNProgress from 'nextjs-progressbar';
+import {useRouter} from 'next/router';
 
 export default function App({ Component, pageProps }) {
+  const location = useRouter().pathname;
   return (
     <>
       <Head>
@@ -12,9 +14,10 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NextNProgress color="#29D" startPosition={0.3} stopDelayMs={200} height={3} showOnShallow={true} />
-      <Navbar />
+      {/* <Navbar /> */}
+      {location !== "/_error" && <Navbar />}
       <Component {...pageProps} />
-      <Footer />
+      {location !== "/_error" && <Footer />}
     </>
   );
 }
