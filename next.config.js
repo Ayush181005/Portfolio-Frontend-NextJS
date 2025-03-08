@@ -4,6 +4,7 @@
 const nextConfig = {
   /* config options here */
   distDir: 'build',
+  optimizeFonts: false,
 }
  
 module.exports = nextConfig
