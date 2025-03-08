@@ -23,6 +23,18 @@ const Footer = () => {
                             &nbsp;
                             <span className={styles.text}>StackOverflow</span>
                         </a>
+
+                        <a href='"https://linkedin.com/ayyyuusshhh' className={styles.footerIcon} target='_blank' rel="noreferrer noopener" title='StackOverflow'>
+                            <Image src='/icons/linkedin.svg' width={20} height={20} alt='Linkedin icon' />
+                            &nbsp;
+                            <span className={styles.text}>Linkedin</span>
+                        </a>
+
+                        <a href='https://instagram.com/ayyyuusshhh_' className={styles.footerIcon} target='_blank' rel="noreferrer noopener" title='StackOverflow'>
+                            <Image src='/icons/instagram.svg' width={20} height={20} alt='Instagram icon' />
+                            &nbsp;
+                            <span className={styles.text}>Instagram</span>
+                        </a>
                     </div>
                 </div>
                 <div className={styles.developer}>

@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <NextNProgress color="#29D" startPosition={0.3} stopDelayMs={200} height={3} showOnShallow={true} />
+      <NextNProgress color="rgba(1, 65, 255, 0.4)" startPosition={0.3} stopDelayMs={200} height={3} showOnShallow={true} />
       {/* <Navbar /> */}
       {location !== "/_error" && <Navbar />}
       <Component {...pageProps} />

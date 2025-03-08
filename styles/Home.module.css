@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Combo&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 .main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 4rem;
+  padding: 1rem;
   min-height: 70vh;
 }
 
@@ -57,7 +58,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 80px;
   margin: auto 0;
 }
 
@@ -69,6 +69,69 @@
 .introContainer .content small {
   font-family: 'Combo', cursive, Calibri;
   font-weight: 300;
+}
+
+.aboutSection {
+  padding: 50px 50px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.aboutSection h1 {
+  font-size: 50px;
+  margin: 0 0 50px 50px;
+}
+
+
+.aboutSection p {
+  margin: 20px 0;
+}
+
+.aboutSection a {
+  color: var(--body-link-color);
+  text-decoration: none;
+}
+
+.aboutSection a:hover {
+  color: var(--body-link-hover-color);
+  text-decoration: underline;
+}
+
+.iconContainer {
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.aboutmeIcon {
+  font-size: 50px;
+  margin: 0px 20px;
+}
+
+.aboutmeIcon:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .aboutSection {
+      padding: 50px 20px;
+  }
+
+  .aboutSection h1 {
+      font-size: 40px;
+      margin-left: 0;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .aboutSection {
+      padding: 50px 10px;
+      text-align: center;
+  }
+
+  .aboutmeIcon {
+      font-size: 30px;
+      margin: 0px 10px;
+  }
 }
 
 @media screen and (max-width: 899px) {
@@ -87,11 +150,6 @@
 
   .introContainer .content h1 {
       font-size: 30px;
-  }
-
-  .imgContainer img {
-      height: 220px;
-      width: auto;
   }
 }
 

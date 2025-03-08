@@ -19,13 +19,44 @@ export default function Home() {
         </div>
         <div className={styles.introContainer}>
           <div className={styles.content}>
-            <h1>Hi, I'm <span className={styles.name}>Ayush</span></h1>
-            <small>With single 'A' 😅😁</small>
-          </div>
-          <div className={styles.imgContainer}>
-            <Image src='/home-img.png' alt="Me" className={styles.homeImg} width={220} height={298} priority />
+            <h1>Hi, I'm <span className={styles.name}>Ayush</span>!!!</h1>
+
+            <div className={styles.iconContainer}>
+                <a href="https://linkedin.com/ayyyuusshhh" target="_blank" rel="noopener noreferrer" aria-label="Linkedin">
+                    <Image src='/icons/linkedin.svg' width={70} height={70} className={styles.aboutmeIcon} alt='Linkedin icon' />
+                </a>
+
+                <a href="https://instagram.com/ayyyuusshhh_" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <Image src='/icons/instagram.svg' width={70} height={70} className={styles.aboutmeIcon} alt='Instagram icon' />
+                </a>
+
+                <a href="/resume.pdf" target="_blank" aria-label="Resume">
+                    <Image src='/icons/RESUME.png' width={70} height={70} className={styles.aboutmeIcon} alt='DownloadResume icon' />
+                </a>
+            </div>
           </div>
         </div>
+        
+        <section className={styles.aboutSection}>
+            <p>
+                Hi, I'm <b>Ayush</b>, a Mechanical Engineering student, Research enthusiast, and Innovator, passionate about Aerospace Engineering, Fluid Mechanics, Heat Transfer, and Advanced Manufacturing. My work spans across Computational Fluid Dynamics (CFD) 🌊, Experimental Fluid Mechanics, Additive Manufacturing (LPBF) 🏗️, and AI-driven optimization 🤖 in thermal MED systems.
+            </p>
+            <p>
+                With a strong foundation in engineering simulations, propulsion systems, and structural analysis, I have actively contributed to national-level IN-SPACe Model Rocketry Competition 🚀, designed and launched experimental rockets, and developed propulsion systems, flight computers, thrust measurement systems, and recovery mechanisms. My research in Multi-Effect Desalination (MED) 💧 explores heat transfer efficiency and AI integration for sustainable water solutions.
+            </p>
+            <p>
+                I have interned at Tanmaye’s Amazing Space and Royal Technosoft, gaining hands-on experience in fluid mechanics, software development 💻, and system optimization. As a core member of Apogee3 (Aerospace Society of PDEU) 🛰️, I collaborate with multidisciplinary teams to push the boundaries of aerospace and mechanical engineering.
+            </p>
+            <p>
+                Beyond academics, I am highly interested in Lawn Tennis! 
+            </p>
+            <p>
+                Driven by curiosity and innovation, I am committed to leveraging science, technology, and research to create impactful solutions in aerospace, energy, and sustainability 🌍.
+            </p>
+            <p>
+                Let’s connect and build the future, one experiment at a time! 🚀✨
+            </p>
+        </section>
       </main>
     </>
   )

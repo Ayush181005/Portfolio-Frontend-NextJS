@@ -45,6 +45,10 @@
   --navbar-text-color: #490000;
   --navbar-text-active-color: #000;
   --hamburger-menu-color: #000;
+  --btn-bg-color: #ddd;
+  --btn-hover-bg-color: #333;
+  --btn-text-color: #000;
+  --btn-hover-text-color: #fff;
   /* --dropdown-item-background-color: #eee;
   --dropdown-item-hover-color: #ddd;
   --nav-list-hover-color: #cfcfcf; */
@@ -87,6 +91,10 @@
     --navbar-text-color: #d6d6d6;
     --navbar-text-active-color: #fff;
     --hamburger-menu-color: #fff;
+    --btn-bg-color: #ddd;
+    --btn-hover-bg-color: #9c9c9c;
+    --btn-text-color: #000;
+    --btn-hover-text-color: #000;
     /* --navbar-text-active-color: #fff;
     --nav-list-hover-color: #032230; */
   }
@@ -96,10 +104,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
-
-html,
-body {
   max-width: 100vw;
   overflow-x: hidden;
 }
@@ -117,6 +121,25 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.btn {
+  background-color: var(--btn-bg-color);
+  color: var(--btn-text-color);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 10px;
+  border-radius: 2px;
+}
+
+.btn:hover {
+  background-color: var(--btn-hover-bg-color);
+  color: var(--btn-hover-text-color);
+}
+
+.btn-sm {
+  padding: 5px 5px;
 }
 
 @media (prefers-color-scheme: dark) {

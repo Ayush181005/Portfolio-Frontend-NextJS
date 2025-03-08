@@ -25,27 +25,8 @@ const Navbar = () => {
                         <Link className={`${styles.navbarText} ${styles.left} ${location === '/' ? styles.active : ''}`} href="/" onClick={closeNav}>Home</Link>
                     </li>
                     <li className={styles.listItem}>
-                        <Link className={`${styles.navbarText} ${styles.right} ${location === '/about' ? styles.active : ''}`} href="/about" onClick={closeNav}>About Me</Link>
-                    </li>
-                    <li className={styles.listItem}>
-                        <Link className={`${styles.navbarText} ${styles.right} ${location === '/portfolio' ? styles.active : ''}`} href="/portfolio" onClick={closeNav}>Portfolio</Link>
-                    </li>
-                    <li className={styles.listItem}>
-                        <Link className={`${styles.navbarText} ${styles.right} ${location === '/certificates' ? styles.active : ''}`} href="/certificates" onClick={closeNav}>Certificates</Link>
-                    </li>
-                    {/* <li className='list-item'><Link className={`navbar-text right ${location.pathname==='/contact'?'active':''}`} to="/contact">Contact Me</Link></li> */}
-                    <li className={styles.listItem}>
                         <Link className={`${styles.navbarText} ${styles.right} ${location === '/contact' ? styles.active : ''}`} href="/contact" onClick={closeNav}>Contact Me</Link>
                     </li>
-                    {/* {userData.success && <li className='list-item'>
-              <button className="btn navbar-btn" onClick={dropdownClick}>Hi {userData.user.name}&nbsp;<i className="arrow down"></i></button>
-              <div className="dropdown hidden">
-                <div className="dropdown-menu">
-                  <div className="dropdown-item" onClick={handleLogout}>Logout</div>
-                  {userData.user.type==='superuser' && <a href="/admin" target="_blank"><div className="dropdown-item">Admin</div></a>}
-                </div>
-              </div>
-            </li>} */}
                 </ul>
                 <div className={styles.menu} id="toggle-button" onClick={navListToggle}>
                     <div className={styles.menuLine} id="menu-line-1"></div>
