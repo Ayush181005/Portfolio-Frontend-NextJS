@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>It's Me - Ayush!</title>
-        <meta name="description" content="Websites are a way to express the art and the skills of any programmer, developer or any other person, and so is this. Here, I have all my Certificates and my Portfoliosfor you, please have a look." />
+        <title>It&apos;s Me - Ayush!</title>
+        <meta name="description" content="Websites are a way to express the art and the skills of any programmer, developer or any other person, and so is this. Have a look at mine ;)" />
       </Head>
 
       <main className={`${styles.main} ${inter.className}`}>
@@ -19,7 +19,7 @@ export default function Home() {
         </div>
         <div className={styles.introContainer}>
           <div className={styles.content}>
-            <h1>Hi, I'm <span className={styles.name}>Ayush</span>!!!</h1>
+            <h1>Hi, I&apos;m <span className={styles.name}>Ayush</span>!!!</h1>
 
             <div className={styles.iconContainer}>
                 <a href="https://linkedin.com/ayyyuusshhh" target="_blank" rel="noopener noreferrer" aria-label="Linkedin">
@@ -39,7 +39,7 @@ export default function Home() {
         
         <section className={styles.aboutSection}>
             <p>
-                Hi, I'm <b>Ayush</b>, a Mechanical Engineering student, Research enthusiast, and Innovator, passionate about Aerospace Engineering, Fluid Mechanics, Heat Transfer, and Advanced Manufacturing. My work spans across Computational Fluid Dynamics (CFD) 🌊, Experimental Fluid Mechanics, Additive Manufacturing (LPBF) 🏗️, and AI-driven optimization 🤖 in thermal MED systems.
+                Hi, I&apos;m <b>Ayush</b>, a Mechanical Engineering student, Research enthusiast, and Innovator, passionate about Aerospace Engineering, Fluid Mechanics, Heat Transfer, and Advanced Manufacturing. My work spans across Computational Fluid Dynamics (CFD) 🌊, Experimental Fluid Mechanics, Additive Manufacturing (LPBF) 🏗️, and AI-driven optimization 🤖 in thermal MED systems.
             </p>
             <p>
                 With a strong foundation in engineering simulations, propulsion systems, and structural analysis, I have actively contributed to national-level IN-SPACe Model Rocketry Competition 🚀, designed and launched experimental rockets, and developed propulsion systems, flight computers, thrust measurement systems, and recovery mechanisms. My research in Multi-Effect Desalination (MED) 💧 explores heat transfer efficiency and AI integration for sustainable water solutions.

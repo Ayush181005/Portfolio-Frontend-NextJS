@@ -9,7 +9,7 @@ const Contact = () => {
             <Head>
                 {/* Ganeral tags */}
                 <title>Contact Me - Ayush</title>
-                <meta name="description" content="Get in touch with me today and let's connect. Whether you have a question, need help with something, or just want to say hello, I am here to listen and respond to you. My contact page is your gateway to communicate with me and I'm looking forward to hearing from you." />
+                <meta name="description" content="Get in touch with me today and let us connect. Whether you have a question, need help with something, or just want to say hello, I am here to listen and respond to you. My contact page is your gateway to communicate with me and I am looking forward to hearing from you." />
             </Head>
 
             <section className={styles.contactSection}>
@@ -20,7 +20,7 @@ const Contact = () => {
                             <br />
                             <p className={styles.contactmeText}>Not much to write here 😅 as most of the things are in the <Link href='/about' className={styles.aboutLink}>About Me</Link> page. Feel free to <span onClick={()=>{document.querySelector('form input').focus()}} className={styles.focusFormBtn}>contact me</span>!</p>
                             <p>
-                                Whether you have a question, need help with something, or just want someone to play Tennis, I am here to listen and respond to you. My contact page is your gateway to communicate with me and I'm looking forward to hearing from you.
+                                Whether you have a question, need help with something, or just want someone to play Tennis, I am here to listen and respond to you. My contact page is your gateway to communicate with me and I&apos;m looking forward to hearing from you.
                             </p>
                         </div>
                         <div className={styles.box}>
@@ -32,7 +32,7 @@ const Contact = () => {
                     </div>
                     <div className={styles.contactForm}>
                         <form action={"https://formsubmit.co/ayush.s181005@gmail.com"} method='POST'>
-                            <h2>Can't wait to see your message!</h2>
+                            <h2>Can&apos;t wait to see your message!</h2>
                             <div className={styles.inputBox}>
                                 <label htmlFor="form-name">Name</label>
                                 <input type="text" name='name' id='form-name' placeholder='Your Name please' required />
