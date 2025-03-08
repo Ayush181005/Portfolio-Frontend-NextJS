@@ -22,7 +22,7 @@ export default function Home() {
             <h1>Hi, I&apos;m <span className={styles.name}>Ayush</span>!!!</h1>
 
             <div className={styles.iconContainer}>
-                <a href="https://linkedin.com/ayyyuusshhh" target="_blank" rel="noopener noreferrer" aria-label="Linkedin">
+                <a href="https://linkedin.com/in/ayyyuusshhh" target="_blank" rel="noopener noreferrer" aria-label="Linkedin">
                     <Image src='/icons/linkedin.svg' width={70} height={70} className={styles.aboutmeIcon} alt='Linkedin icon' />
                 </a>
 

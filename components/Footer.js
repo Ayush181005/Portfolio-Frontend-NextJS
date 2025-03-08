@@ -24,7 +24,7 @@ const Footer = () => {
                             <span className={styles.text}>StackOverflow</span>
                         </a>
 
-                        <a href='"https://linkedin.com/ayyyuusshhh' className={styles.footerIcon} target='_blank' rel="noreferrer noopener" title='StackOverflow'>
+                        <a href='"https://linkedin.com/in/ayyyuusshhh' className={styles.footerIcon} target='_blank' rel="noreferrer noopener" title='StackOverflow'>
                             <Image src='/icons/linkedin.svg' width={20} height={20} alt='Linkedin icon' />
                             &nbsp;
                             <span className={styles.text}>Linkedin</span>
