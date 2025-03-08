@@ -10,11 +10,14 @@
   },
   "dependencies": {
     "eslint": "9.22.0",
-    "eslint-config-next": "12.2.2",
-    "next": "12.2.2",
+    "eslint-config-next": "15.2.1",
+    "next": "^15.2.1",
     "nextjs-progressbar": "^0.0.16",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@netlify/plugin-nextjs": "^4.37.2"
   },
   "main": "index.js",
   "repository": "https://github.com/Ayush181005/Portfolio-Frontend-NextJS.git",
