@@ -9,7 +9,6 @@ const Navbar = () => {
     let location = router.pathname;
 
     const navListToggle = () => {document.getElementById('nav-list').classList.toggle(styles.navListHidden);}
-    // const dropdownClick = () => document.getElementsByClassName('dropdown')[0].classList.toggle('hidden');
     const closeNav = () => {document.getElementById('nav-list').classList.add(styles.navListHidden);}
 
     return (
@@ -17,7 +16,7 @@ const Navbar = () => {
             <nav className={styles.navbar}>
                 <div className={styles.navLogoParent}>
                     <Link href="/">
-                        <Image src='/logo.jpg' alt="Logo" className={styles.navbarLogo} height={120} width={120} priority />
+                        <Image src='/logo.jpg' alt="Logo" className={styles.navbarLogo} height={120} width={120} style={{width:"auto", height:"auto"}} priority />
                     </Link>
                 </div>
                 <ul className={`${styles.navList} ${styles.navListHidden}`} id="nav-list">
