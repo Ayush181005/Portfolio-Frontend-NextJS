@@ -102,6 +102,7 @@
 .aboutmeIcon {
   font-size: 50px;
   margin: 0px 20px;
+  padding: 5px;
 }
 
 .aboutmeIcon:hover {
@@ -121,7 +122,7 @@
 
 @media all and (max-width: 450px) {
   .aboutSection {
-      padding: 50px 10px;
+      padding: 10px 10px;
       text-align: center;
   }
 

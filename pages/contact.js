@@ -8,8 +8,23 @@ const Contact = () => {
         <>
             <Head>
                 {/* Ganeral tags */}
-                <title>Contact Me - Ayush</title>
+                <title>Contact Me | Ayush</title>
                 <meta name="description" content="Get in touch with me today and let us connect. Whether you have a question, need help with something, or just want to say hello, I am here to listen and respond to you. My contact page is your gateway to communicate with me and I am looking forward to hearing from you." />
+
+                <meta name="keywords" content="Contact Ayush Singh, Get in Touch, Email Ayush Singh, Pandit Deendayal Energy University, Ayush, PDEU, Mechanical Engineer, Mechanical Engineering, CFD, Research, Resume, Engineering Projects, Aerospace Engineering, Fluid Mechanics, Additive Manufacturing, Propulsion Systems" />
+                <meta name="author" content="Ayush Singh" />
+                <meta name="robots" content="index, follow" />
+
+                <meta property="og:title" content="Contact Me | Ayush" />
+                <meta property="og:description" content="Get in touch with me today and let us connect. Whether you have a question, need help with something, or just want to say hello, I am here to listen and respond to you. My contact page is your gateway to communicate with me and I am looking forward to hearing from you." />
+                <meta property="og:image" content="https://www.theayush.in/gallery/26.jpg" />
+                <meta property="og:url" content="https://www.theayush.in/contact/" />
+                <meta property="og:type" content="website" />
+
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Contact Me | Ayush" />
+                <meta name="twitter:description" content="Get in touch with me today and let us connect. Whether you have a question, need help with something, or just want to say hello, I am here to listen and respond to you. My contact page is your gateway to communicate with me and I am looking forward to hearing from you." />
+                <meta name="twitter:image" content="https://www.theayush.in/gallery/26.jpg" />
             </Head>
 
             <section className={styles.contactSection}>

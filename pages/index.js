@@ -9,14 +9,30 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>It&apos;s Me - Ayush!</title>
-        <meta name="description" content="Websites are a way to express the art and the skills of any programmer, developer or any other person, and so is this. Have a look at mine ;)" />
+        <title>About Me | Ayush | Mechanical Engineering | PDEU</title>
+        <meta name="description" content="Websites are a way to express the art and the skills of any a person, and so is this. Have a look at mine! I am a Passionate Mechanical Engineering Student at Pandit Deendayal Energy Unievrsity, and interests are Aerospace Engineering, Fluid Mechanics, Heat Transfer, and Additive Manufacturing. Explore my work in CFD simulations, propulsion systems, LPBF research, and programming. Join me in pushing the boundaries of engineering and innovation! 🚀🔬" />
+
+        <meta name="keywords" content="Pandit Deendayal Energy University, Ayush, PDEU, Mechanical Engineer, Mechanical Engineering, CFD, Research, Resume, Engineering Projects, Aerospace Engineering, Fluid Mechanics, Additive Manufacturing, Propulsion Systems" />
+        <meta name="author" content="Ayush Singh" />
+        <meta name="robots" content="index, follow" />
+
+        <meta property="og:title" content="Ayush | Mechanical Engineering | PDEU" />
+        <meta property="og:description" content="Websites are a way to express the art and the skills of any a person, and so is this. Have a look at mine! I am a Passionate Mechanical Engineering Student at Pandit Deendayal Energy Unievrsity, and interests are Aerospace Engineering, Fluid Mechanics, Heat Transfer, and Additive Manufacturing. Explore my work in CFD simulations, propulsion systems, LPBF research, and programming. Join me in pushing the boundaries of engineering and innovation! 🚀🔬" />
+        <meta property="og:image" content="https://www.theayush.in/gallery/26.jpg" />
+        <meta property="og:url" content="https://www.theayush.in/" />
+        <meta property="og:type" content="website" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Ayush | Mechanical Engineering | PDEU" />
+        <meta name="twitter:description" content="Websites are a way to express the art and the skills of any a person, and so is this. Have a look at mine! I am a Passionate Mechanical Engineering Student at Pandit Deendayal Energy Unievrsity, and interests are Aerospace Engineering, Fluid Mechanics, Heat Transfer, and Additive Manufacturing. Explore my work in CFD simulations, propulsion systems, LPBF research, and programming. Join me in pushing the boundaries of engineering and innovation! 🚀🔬" />
+        <meta name="twitter:image" content="https://www.theayush.in/gallery/26.jpg" />
       </Head>
 
       <main className={`${styles.main} ${inter.className}`}>
         <div className={styles.glowContainer}>
           <div className={styles.glow}></div>
         </div>
+
         <div className={styles.introContainer}>
           <div className={styles.content}>
             <h1>Hi, I&apos;m <span className={styles.name}>Ayush</span>!!!</h1>
@@ -39,7 +55,7 @@ export default function Home() {
         
         <section className={styles.aboutSection}>
             <p>
-                Hi, I&apos;m <b>Ayush</b>, a Mechanical Engineering student, Research enthusiast, and Innovator, passionate about Aerospace Engineering, Fluid Mechanics, Heat Transfer, and Advanced Manufacturing. My work spans across Computational Fluid Dynamics (CFD) 🌊, Experimental Fluid Mechanics, Additive Manufacturing (LPBF) 🏗️, and AI-driven optimization 🤖 in thermal MED systems.
+                Hi, I&apos;m <b>Ayush</b>, a Mechanical Engineering student, at Pandit Deendayal Energy University, India. I am passionate about Aerospace Engineering, Fluid Mechanics, Heat Transfer, and Advanced Manufacturing. My interests span across Computational Fluid Dynamics (CFD) 🌊, Experimental Fluid Mechanics, Additive Manufacturing (LPBF) 🏗️, and AI-driven optimization 🤖 in thermal MED systems.
             </p>
             <p>
                 With a strong foundation in engineering simulations, propulsion systems, and structural analysis, I have actively contributed to national-level IN-SPACe Model Rocketry Competition 🚀, designed and launched experimental rockets, and developed propulsion systems, flight computers, thrust measurement systems, and recovery mechanisms. My research in Multi-Effect Desalination (MED) 💧 explores heat transfer efficiency and AI integration for sustainable water solutions.

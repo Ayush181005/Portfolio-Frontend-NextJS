@@ -25,6 +25,9 @@ const Navbar = () => {
                         <Link className={`${styles.navbarText} ${styles.left} ${location === '/' ? styles.active : ''}`} href="/" onClick={closeNav}>Home</Link>
                     </li>
                     <li className={styles.listItem}>
+                        <Link className={`${styles.navbarText} ${styles.right} ${location === '/gallery' ? styles.active : ''}`} href="/gallery" onClick={closeNav}>Gallery</Link>
+                    </li>
+                    <li className={styles.listItem}>
                         <Link className={`${styles.navbarText} ${styles.right} ${location === '/contact' ? styles.active : ''}`} href="/contact" onClick={closeNav}>Contact Me</Link>
                     </li>
                 </ul>
