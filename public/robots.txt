@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Allow: /contact
+Allow: /gallery
+
+Host: theayush.in
+Sitemap: https://www.theayush.in/sitemap.xml

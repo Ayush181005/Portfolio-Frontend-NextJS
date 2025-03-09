@@ -29,7 +29,7 @@ export default function Home() {
       </Head>
 
       <div className={styles.impLinks}>
-        <a href="/resume.pdf" target="_blank">My Resume</a>
+        <a href="/docs/resume.pdf" target="_blank">My Resume</a>
         <span className={styles.character}>&#9675;</span>
         <a href="/docs/CFD.pdf" target="_blank">CFD Notes</a>
         <span className={styles.character}>&#9675;</span>

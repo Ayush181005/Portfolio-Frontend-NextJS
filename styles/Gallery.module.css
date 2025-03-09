@@ -55,6 +55,10 @@
         flex: 50%;
     }
 
+    .imageGallery {
+        padding: 20px;
+    }
+
     .imageGallery a {
         font-size: 12px;
     }

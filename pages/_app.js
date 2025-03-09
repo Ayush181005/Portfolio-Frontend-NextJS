@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icons/favicon.ico" />
       </Head>
       <NextNProgress color="rgba(1, 65, 255, 0.4)" startPosition={0.3} stopDelayMs={200} height={3} showOnShallow={true} />
       {/* <Navbar /> */}
