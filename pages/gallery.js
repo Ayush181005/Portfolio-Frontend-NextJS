@@ -34,6 +34,8 @@ export default function Home() {
         <a href="/docs/CFD.pdf" target="_blank">CFD Notes</a>
         <span className={styles.character}>&#9675;</span>
         <a href="/docs/Report_1D_Diffusion.pdf" target="_blank">Comparision of 1D Diffusion solved Analytically and Numerically</a>
+        <span className={styles.character}>&#9675;</span><br />
+        <a href="/docs/Report_Wing_Spar.pdf" target="_blank">Optimized Structural Design of an Aircraft Wing Spar for Weight Reduction and Strength Enhancement</a>
       </div>
 
       <div className={styles.imageGallery}>
