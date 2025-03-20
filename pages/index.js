@@ -47,7 +47,7 @@ export default function Home() {
                 </a>
 
                 <a href="/docs/resume.pdf" target="_blank" aria-label="Resume">
-                    <Image src='/icons/RESUME.png' width={70} height={70} className={styles.aboutmeIcon} alt='DownloadResume icon' />
+                    <Image style={{borderRadius: "13px"}} src='/icons/CV.jpg' width={70} height={70} className={styles.aboutmeIcon} alt='DownloadResume icon' />
                 </a>
             </div>
           </div>
