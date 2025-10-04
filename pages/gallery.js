@@ -57,6 +57,7 @@ export default function Home() {
           </div>
           <div className={styles.column}>
             <Image src='/gallery/01.jpg' width={500} height={500} style={{width:'100%', height:'auto'}} alt="Gallery Image" />
+            <Image src='/gallery/37.jpg' width={500} height={500} style={{width:'100%', height:'auto'}} alt="Gallery Image" />
             <Image src='/gallery/4.jpg' width={500} height={500} style={{width:'100%', height:'auto'}} alt="Gallery Image" />
             <Image src='/gallery/8.jpg' width={500} height={500} style={{width:'100%', height:'auto'}} alt="Gallery Image" />
             <Image src='/gallery/12.jpg' width={500} height={500} style={{width:'100%', height:'auto'}} alt="Gallery Image" />
