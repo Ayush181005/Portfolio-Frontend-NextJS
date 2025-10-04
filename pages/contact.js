@@ -46,7 +46,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className={styles.contactForm}>
-                        <form action={"https://formsubmit.co/ayush.s181005@gmail.com"} method='POST'>
+                        <form action={"https://formsubmit.co/66d3f9bf18706b08086ddc2ad4403798 "} method='POST'>
                             <h2>Can&apos;t wait to see your message!</h2>
                             <div className={styles.inputBox}>
                                 <label htmlFor="form-name">Name</label>

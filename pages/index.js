@@ -52,7 +52,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        
+
         <section className={styles.aboutSection}>
             <p>
                 Hi, I&apos;m <b>Ayush</b>, a Mechanical Engineering student, at Pandit Deendayal Energy University, India. I am passionate about Aerospace Engineering, Fluid Mechanics, Heat Transfer, and Advanced Manufacturing. My interests span across Computational Fluid Dynamics (CFD) 🌊, Experimental Fluid Mechanics, Additive Manufacturing (LPBF) 🏗️, and AI-driven optimization 🤖 in thermal MED systems.
