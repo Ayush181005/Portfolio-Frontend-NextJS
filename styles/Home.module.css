@@ -5,6 +5,7 @@
   align-items: center;
   padding: 1rem;
   min-height: 70vh;
+  text-align: justify;
 }
 
 .glowContainer {
@@ -107,6 +108,16 @@
 
 .aboutmeIcon:hover {
   transform: scale(1.1);
+}
+
+.pTitle {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.readBrief {
+  cursor: pointer !important;
+  text-decoration: underline !important;
 }
 
 @media screen and (max-width: 768px) {
