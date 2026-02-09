@@ -57,6 +57,8 @@
   /* --dropdown-item-background-color: #eee;
   --dropdown-item-hover-color: #ddd;
   --nav-list-hover-color: #cfcfcf; */
+
+  --highlight-color: #acddde;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -102,6 +104,9 @@
     --btn-hover-text-color: #000;
     /* --navbar-text-active-color: #fff;
     --nav-list-hover-color: #032230; */
+
+    --highlight-color: #ffff0033;
+
   }
 }
 
