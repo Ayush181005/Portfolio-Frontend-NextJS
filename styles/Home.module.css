@@ -173,6 +173,10 @@
     transform: none;
     height: 300px;
   }
+
+  .glowContainer {
+    left: 40%;
+  }
 }
 
 @media all and (max-width: 450px) {
@@ -185,6 +189,10 @@
   .aboutmeIcon {
       font-size: 30px;
       margin: 0px 10px;
+  }
+
+  .glowContainer {
+    left: 0;
   }
 }
 
