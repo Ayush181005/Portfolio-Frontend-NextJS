@@ -29,7 +29,7 @@ export default function Home() {
       </Head>
 
       <div className={styles.impLinks}>
-        <a href="/docs/resume.pdf" target="_blank">My Resume</a>
+        <a href="/docs/Ayush Singh CV.pdf" target="_blank">My Resume</a>
         <span className={styles.character}>&#9675;</span>
         <a href="/docs/Portfolio.pdf" target="_blank">Portfolio</a>
         <span className={styles.character}>&#9675;</span>
@@ -39,7 +39,7 @@ export default function Home() {
         <span className={styles.character}>&#9675;</span><br />
         <a href="/docs/Report_Wing_Spar.pdf" target="_blank">Optimized Structural Design of an Aircraft Wing Spar for Weight Reduction and Strength Enhancement</a>
         <span className={styles.character}>&#9675;</span><br />
-        <a href="/docs/SRIP2025_Report.pdf" target="_blank">Mitigating Avalanche Destruction through CFD Modeling & Lattice Structure Design</a>
+        <a href="/docs/Avalanche CFD_SRIP2025_IIT-Gandhinagar_Report.pdf" target="_blank">Mitigating Avalanche Destruction through CFD Modeling & Lattice Structure Design (IIT-Gn)</a>
       </div>
 
       <div className={styles.imageGallery}>
