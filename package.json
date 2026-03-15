@@ -9,10 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "eslint": "9.22.0",
+    "eslint": "^9.39.4",
     "eslint-config-next": "16.1.6",
     "next": "16.1.6",
-    "nextjs-progressbar": "^0.0.16",
+    "nextjs-toploader": "^3.9.17",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
