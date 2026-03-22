@@ -75,6 +75,16 @@
   text-align: justify;
 }
 
+.aboutSection .aboutImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  width: 70%;
+  height: auto;
+}
+
 .aboutSection h1 {
   font-size: 50px;
   margin: 0 0 50px 50px;
@@ -154,12 +164,16 @@
 
 @media screen and (max-width: 768px) {
   .aboutSection {
-      padding: 50px 20px;
+      padding: 10px 20px;
   }
 
   .aboutSection h1 {
       font-size: 40px;
       margin-left: 0;
+  }
+
+  .aboutSection .aboutImage {
+    width: 80%;
   }
 }
 
@@ -176,6 +190,10 @@
 
   .glowContainer {
     left: 40%;
+  }
+
+  .aboutSection .aboutImage {
+    width: 90%;
   }
 }
 

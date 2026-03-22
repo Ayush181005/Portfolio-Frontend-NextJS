@@ -24,21 +24,21 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>About Me | Ayush | Mechanical Engineering | PDEU</title>
+        <title>About Me | Ayush Singh | Mechanical Engineering | PDEU</title>
         <meta name="description" content="Websites are a way to express the art and the skills of any a person, and so is this. Have a look at mine! I am a Passionate Mechanical Engineering Student at Pandit Deendayal Energy Unievrsity, and interests are Aerospace Engineering, Fluid Mechanics, Heat Transfer, and Additive Manufacturing. Explore my work in CFD simulations, propulsion systems, LPBF research, and programming. Join me in pushing the boundaries of engineering and innovation! 🚀🔬" />
 
-        <meta name="keywords" content="Pandit Deendayal Energy University, Pandit Deendayal Petroleum University, Ayush, PDEU, PDPU, Mechanical Engineer, Mechanical Engineering, CFD, Research, Resume, Engineering Projects, Aerospace Engineering, Fluid Mechanics, Additive Manufacturing, Propulsion Systems" />
+        <meta name="keywords" content="Pandit Deendayal Energy University, Pandit Deendayal Petroleum University, Ayush, Singh, Ayush Singh, PDEU, PDPU, Mechanical Engineer, Mechanical Engineering, CFD, Research, Resume, Engineering Projects, Aerospace Engineering, Fluid Mechanics, Additive Manufacturing, Propulsion Systems" />
         <meta name="author" content="Ayush Singh" />
         <meta name="robots" content="index, follow" />
 
-        <meta property="og:title" content="Ayush | Mechanical Engineering | PDEU" />
+        <meta property="og:title" content="Ayush Singh | Mechanical Engineering | PDEU" />
         <meta property="og:description" content="Websites are a way to express the art and the skills of any a person, and so is this. Have a look at mine! I am a Passionate Mechanical Engineering Student at Pandit Deendayal Energy Unievrsity, and interests are Aerospace Engineering, Fluid Mechanics, Heat Transfer, and Additive Manufacturing. Explore my work in CFD simulations, propulsion systems, LPBF research, and programming. Join me in pushing the boundaries of engineering and innovation! 🚀🔬" />
         <meta property="og:image" content="https://www.theayush.in/gallery/26.jpg" />
         <meta property="og:url" content="https://www.theayush.in/" />
         <meta property="og:type" content="website" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Ayush | Mechanical Engineering | PDEU" />
+        <meta name="twitter:title" content="Ayush Singh | Mechanical Engineering | PDEU" />
         <meta name="twitter:description" content="Websites are a way to express the art and the skills of any a person, and so is this. Have a look at mine! I am a Passionate Mechanical Engineering Student at Pandit Deendayal Energy Unievrsity, and interests are Aerospace Engineering, Fluid Mechanics, Heat Transfer, and Additive Manufacturing. Explore my work in CFD simulations, propulsion systems, LPBF research, and programming. Join me in pushing the boundaries of engineering and innovation! 🚀🔬" />
         <meta name="twitter:image" content="https://www.theayush.in/gallery/26.jpg" />
       </Head>
@@ -69,6 +69,7 @@ export default function Home() {
         </div>
 
         <section className={styles.aboutSection}>
+        <Image src='/horizontal_vertical_domain.png' width={0} height={0} sizes="100vw" className={styles.aboutImage} alt='Domains as explored horizontally and vertically' />
           <p>
             {/* Heyy, I&apos;m <b>Ayush</b>,  */}
             If you are here, you probably want to know me or you opened the site by mistake, anyways, I want to thank you to reach here. If you want a smaller summary click <a role='button' className={styles.readBrief} onClick={toggleShort}>here!</a>, and if you are okay with a long read, then keep reading!
