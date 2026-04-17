@@ -1,53 +1,97 @@
 import Head from 'next/head'
-import React, { useRef } from 'react' // 1. Added useRef
+import React, { useRef } from 'react'
 import styles from '../styles/Contact.module.css'
 import Link from 'next/link'
-import ReCAPTCHA from "react-google-recaptcha"; // 2. Import ReCAPTCHA
+import ReCAPTCHA from 'react-google-recaptcha'
 
 const Contact = () => {
-    const recaptchaRef = useRef(null); // 3. Create a ref
+    // 1. Create a reference to the reCAPTCHA component
+    const recaptchaRef = useRef(null);
 
-    const handleSubmit = (e) => {
-        const token = recaptchaRef.current.getValue();
-        if (!token) {
-            e.preventDefault(); // Stop form submission if no captcha
-            alert("Please complete the reCAPTCHA");
+    // 2. Intercept the form submission
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const form = e.target;
+
+        try {
+            // 3. Execute the invisible reCAPTCHA
+            const token = await recaptchaRef.current.executeAsync();
+
+            if (token) {
+                // Token successfully generated!
+                // Note: For actual security, you would send this token to your own Next.js API route here.
+                // Since you are using formsubmit.co, we will just resume the native form submission.
+                form.submit();
+            }
+        } catch (error) {
+            console.error("reCAPTCHA execution failed:", error);
         }
-        // If token exists, form continues to FormSubmit.co automatically
-    };
+    }
 
     return (
         <>
             <Head>
+                {/* General tags */}
                 <title>Contact Me | Ayush</title>
-                {/* ... existing meta tags ... */}
+                <meta name="description" content="Get in touch with me today and let us connect. Whether you have a question, need help with something, or just want to say hello, I am here to listen and respond to you. My contact page is your gateway to communicate with me and I am looking forward to hearing from you." />
+
+                <meta name="keywords" content="Contact Ayush Singh, Get in Touch, Email Ayush Singh, Pandit Deendayal Energy University, Ayush, PDEU, Mechanical Engineer, Mechanical Engineering, CFD, Research, Resume, Engineering Projects, Aerospace Engineering, Fluid Mechanics, Additive Manufacturing, Propulsion Systems" />
+                <meta name="author" content="Ayush Singh" />
+                <meta name="robots" content="index, follow" />
+
+                <meta property="og:title" content="Contact Me | Ayush" />
+                <meta property="og:description" content="Get in touch with me today and let us connect. Whether you have a question, need help with something, or just want to say hello, I am here to listen and respond to you. My contact page is your gateway to communicate with me and I am looking forward to hearing from you." />
+                <meta property="og:image" content="https://www.theayush.in/gallery/26.jpg" />
+                <meta property="og:url" content="https://www.theayush.in/contact/" />
+                <meta property="og:type" content="website" />
+
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Contact Me | Ayush" />
+                <meta name="twitter:description" content="Get in touch with me today and let us connect. Whether you have a question, need help with something, or just want to say hello, I am here to listen and respond to you. My contact page is your gateway to communicate with me and I am looking forward to hearing from you." />
+                <meta name="twitter:image" content="https://www.theayush.in/gallery/26.jpg" />
             </Head>
 
             <section className={styles.contactSection}>
                 <div className={styles.container}>
-                    {/* ... info section ... */}
-                    
+                    <div className={styles.contactInfo}>
+                        <div className={styles.content}>
+                            <h1>Contact Me</h1>
+                            <br />
+                            <p className={styles.contactmeText}>Not much to write here 😅 as most of the things are in the <Link href='/about' className={styles.aboutLink}>About Me</Link> page. Feel free to <span onClick={()=>{document.querySelector('form input').focus()}} className={styles.focusFormBtn}>contact me</span>!</p>
+                            <p>
+                                Whether you have a question, need help with something, or just want someone to play Tennis, I am here to listen and respond to you. My contact page is your gateway to communicate with me and I&apos;m looking forward to hearing from you.
+                            </p>
+                        </div>
+                        <div className={styles.box}>
+                            <div className={styles.text}>
+                                <small>Email</small>
+                                <p><a href="mailto:ayush.s181005@gmail.com" className={styles.contactFormInfoLink}>ayush.s181005@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
                     <div className={styles.contactForm}>
-                        <form 
-                            action="https://formsubmit.co/66d3f9bf18706b08086ddc2ad4403798" 
-                            method='POST'
-                            onSubmit={handleSubmit} // 4. Attach handler
-                        >
+                        {/* 4. Add the onSubmit handler here */}
+                        <form onSubmit={handleSubmit} action={"https://formsubmit.co/" + process.env.FORMSUBMIT_KEY} method='POST'>
                             <h2>Can&apos;t wait to see your message!</h2>
-                            
-                            {/* ... input boxes ... */}
                             <div className={styles.inputBox}>
-                                <label htmlFor="form-msg">Your Message:</label>
-                                <textarea name="msg" id="form-msg" cols="30" rows="10" placeholder='Start typing...'></textarea>
+                                <label htmlFor="form-name">Name</label>
+                                <input type="text" name='name' id='form-name' placeholder='Your Name please' required />
+                            </div>
+                            <div className={styles.inputBox}>
+                                <label htmlFor="form-email">Email</label>
+                                <input type="email" name='email' id='form-email' placeholder='Your Email here' required />
+                            </div>
+                            <div className={styles.inputBox}>
+                                <label htmlFor="form-msg">Your Message:{process.env.REACT_APP_SAMPLE}</label>
+                                <textarea name="msg" id="form-msg" cols="30" rows="10" placeholder='Start typing...' required></textarea>
                             </div>
 
-                            {/* 5. Add the reCAPTCHA widget */}
-                            <div className={styles.inputBox}>
-                                <ReCAPTCHA
-                                    ref={recaptchaRef}
-                                    sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
-                                />
-                            </div>
+                            {/* 5. Add the invisible ReCAPTCHA component */}
+                            <ReCAPTCHA
+                                ref={recaptchaRef}
+                                size="invisible"
+                                sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+                            />
 
                             <div className={styles.inputBox}>
                                 <button type="submit" className={`btn ${styles.submitBtn}`}>Submit</button>
