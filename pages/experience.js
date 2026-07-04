@@ -4,12 +4,13 @@ import ProjectCard from '@/components/ProjectCard'
 
 const EXPERIENCE = [
   {
-    role: 'Core Technical Engineer & Treasurer',
+    role: 'Core Systems Engineer, Design & Analysis',
     org: 'Apogee — Aerospace Society, PDEU',
     period: 'Jun 2023 — Present',
     points: [
       'Founder & Technical Head, PDEU Rocketry Team (2025) — systems engineering across propulsion, design & analysis',
       'Finalist, National Model Rocketry India competition; FRR-approved; secured ₹3,00,000 in sponsorship',
+      'Treasurer, Apogee Aerospace Society (2024) as a core team member along with technical work',
     ],
   },
   {
@@ -28,14 +29,19 @@ const ACTIVE_PROJECTS = [
     id: 'avalanche-lattice',
     title: 'Lattice structures to blunt avalanche impact',
     field: 'CFD · Granular Flow · Structures',
-    advisor: 'Prof. Manish Kumar',
+    advisor: 'Prof. Manish Kumar, Dean of Student Affairs',
     org: 'IIT Gandhinagar',
     advisorLink: 'https://iitgn.ac.in/faculty/civil/fac-manish',
     duration: '~1 year, ongoing',
     points: [
       'Treats snow as a granular fluid rather than a simple solid — VOF-based CFD in Ansys Fluent, validated to within 5% of experimental data',
       'Two lattice geometries simulated and impact-tested; the strongest design cuts peak impact force by up to 30%',
-      'Began as a Student Research Internship Program (SRIP) project — now continuing as an Undergraduate Research Fellow in the group',
+      <>
+        Began as a Student Research Internship Program (SRIP) project — now continuing as an Undergraduate Research Fellow in the group{' '}
+        <a href="/docs/Avalanche CFD_SRIP2025_IIT-Gandhinagar_Report.pdf" className={styles.advisorLink} target="_blank" rel="noopener noreferrer">
+          (Internship Report Link)
+        </a>
+      </>,
       'Won the Bhalodia–Khetan Research Excellence Award — ₹50,000',
     ],
     badge: 'Award · ₹50,000 Research Excellence',
@@ -44,9 +50,10 @@ const ACTIVE_PROJECTS = [
   {
     id: 'tpms-heat-exchanger',
     title: 'Cutting pressure drop in TPMS heat exchangers',
-    field: 'Thermal Design · TPMS · CFD',
-    advisor: 'Prof. Pavan Gurrala',
+    field: 'Thermal · Design · TPMS · CFD',
+    advisor: 'Prof. Pavan Gurrala, Associate Dean of School of Technology',
     org: 'PDEU',
+    advisorLink: 'https://orsp.pdpu.ac.in/adminfacviewprofile.aspx?facid=pavan.gurrala',
     duration: 'Ongoing',
     points: [
       'Exploring triply periodic minimal surface (TPMS) geometries as an alternative to conventional fin-and-channel exchanger designs',
@@ -59,8 +66,9 @@ const ACTIVE_PROJECTS = [
     id: 'mandibular-implant',
     title: '3D-printed mandibular implants, without a bone graft',
     field: 'Biomedical · Additive Manufacturing',
-    advisor: 'Prof. Pavan Gurrala',
+    advisor: 'Prof. Pavan Gurrala, Associate Dean of School of Technology',
     org: 'PDEU',
+    advisorLink: 'https://orsp.pdpu.ac.in/adminfacviewprofile.aspx?facid=pavan.gurrala',
     duration: 'Ongoing',
     points: [
       'Designed and 3D-printed a patient-specific mandibular implant technique that removes the need for a bone graft entirely',
@@ -75,6 +83,7 @@ const ACTIVE_PROJECTS = [
     field: 'Biomechanics · Smart Materials',
     advisor: 'Prof. Nilavjyoti Sarmah',
     org: 'PDEU',
+    advisorLink: 'https://orsp.pdpu.ac.in/adminfacviewprofile.aspx?facid=nilavjyoti.sarmah_ad',
     duration: 'Started this month',
     points: [
       'Designing a rehabilitation exoskeleton driven by shape memory alloy (SMA) actuators for stroke patients',
@@ -91,6 +100,7 @@ const COMPLETE_PROJECTS = [
     field: 'Machine Learning · Thermal Systems',
     advisor: 'Dr. Rahul Deharkar',
     org: 'PDEU',
+    advisorLink: 'https://orsp.pdpu.ac.in/adminfacviewprofile.aspx?facid=rahul.deharkar',
     points: [
       'Built an artificial neural network to predict distillate output of a Multi-Effect Distillation (MED) system',
       'Accepted for publication — Springer-Nature conference proceedings, ICAWTM-25, PDEU',
@@ -101,8 +111,9 @@ const COMPLETE_PROJECTS = [
     id: 'lpbf-hot-cracking',
     title: 'Hot cracking across materials in LPBF',
     field: 'Additive Manufacturing · Materials',
-    advisor: 'Prof. Vishvesh Badheka',
+    advisor: 'Prof. Vishvesh Badheka, former Dean of Academic Affairs',
     org: 'PDEU',
+    advisorLink: 'https://orsp.pdpu.ac.in/adminfacviewprofile.aspx?facid=vishvesh.badheka',
     points: [
       'Studied how material property and composition drive hot cracking in Laser Powder Bed Fusion (LPBF) across different alloy systems',
       'Published — conference proceedings, IMECE-2025, ASME, Hyderabad',
@@ -115,6 +126,7 @@ const COMPLETE_PROJECTS = [
     field: 'Optimisation · Water Systems',
     advisor: 'Dr. Rahul Deharkar',
     org: 'PDEU',
+    advisorLink: 'https://orsp.pdpu.ac.in/adminfacviewprofile.aspx?facid=rahul.deharkar',
     points: [
       'Developed a physics-aligned model and a multi-objective fitness function for design optimisation of a batch reverse osmosis (RO) system',
       'Accepted for publication — conference proceedings, IMECE-2026, ASME',

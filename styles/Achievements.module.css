@@ -132,3 +132,14 @@
     position: static;
   }
 }
+
+
+.reportLink {
+  color: var(--ink-muted);
+  text-decoration: underline;
+  text-decoration-color: var(--rule-strong);
+  text-underline-offset: 3px;
+}
+.reportLink:hover {
+  color: var(--blue);
+}

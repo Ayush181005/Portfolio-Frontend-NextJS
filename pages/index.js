@@ -22,7 +22,7 @@ const FEATURED = [
   {
     title: '3D-printed mandibular implants, no bone graft',
     org: 'PDEU · Prof. Pavan Gurrala',
-    status: 'Under review, ICBME 2026',
+    status: 'Under review, ICBME 2026, NUS Singapore',
     tone: 'live',
     href: '/experience#mandibular-implant',
   },
@@ -66,8 +66,8 @@ export default function Home() {
               </h1>
               <p className={styles.tagline}>I model how things break, then design them not to.</p>
               <p className={styles.subtext}>
-                I&apos;m a mechanical engineering researcher working across granular-flow CFD, compact
-                heat exchanger design, additive manufacturing, and biomedical implants &mdash; with a
+                I&apos;m a mechanical engineering researcher working across non-Newtonian granular-flow (snow-avalanche) CFD, TPMS
+                heat exchanger design for reduced pressure drop, additive manufacturing, and biomedical implants &mdash; with a
                 parallel life leading a university rocketry team and running science outreach on the side.
               </p>
 
@@ -81,6 +81,12 @@ export default function Home() {
                 <Link href="/contact" className={styles.btnGhost}>
                   Get in touch
                 </Link>
+                {/* <a href="/docs/Portfolio.pdf" target="_blank" rel="noopener noreferrer" className={styles.btnSecondary}>
+                  <DownloadIcon width={15} height={15} /> Portfolio
+                </a>
+                <Link href="/gallery" className={styles.btnGhost}>
+                  View Gallery
+                </Link> */}
               </div>
 
               <div className={styles.iconRow}>
@@ -156,7 +162,7 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <span className={styles.figureCaption}>Fig. 01 — Ayush presenting his paper on additive manufacturing of batteries at the International Symposium on Battery Technology, ICTEA, 2023</span>
+              <span className={styles.figureCaption}>Fig. 1: Ayush presenting his paper on additive manufacturing of batteries at the International Symposium on Battery Technology, ICTEA, 2023</span>
             </div>
           </div>
         </section>

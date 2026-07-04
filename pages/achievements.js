@@ -4,7 +4,7 @@ import styles from '@/styles/Achievements.module.css'
 const HEADLINE_STATS = [
   { value: '9.88', unit: '/10', label: 'CPI in Mechanical Engineering' },
   { value: '#1', unit: '', label: 'Rank, Mechanical Engineering, PDEU' },
-  { value: '₹8.55L', unit: '', label: 'Combined awards & sponsorship secured' },
+  { value: '₹12.55L', unit: '', label: 'Combined awards, scholarship, grants & sponsorships secured' },
 ]
 
 const TIMELINE = [
@@ -39,12 +39,12 @@ const TIMELINE = [
         highlight: true,
       },
       {
-        title: 'Selected — Student Research Internship Program (SRIP)',
-        detail: 'One of the prestigious research placements at IIT Gandhinagar',
+        title: 'Selected for the Student Research Internship Program (SRIP), IIT Gandhinagar',
+        detail: 'One of the prestigious research placements at IIT Gandhinagar, ~200 selected nationwide out of ~45,000 applicants',
       },
       {
-        title: '3rd Rank, Mech-A-Thon 2025',
-        detail: 'A 5-day mechanical engineering hackathon',
+        title: ['3rd Rank, Mech-A-Thon 2025 ', <a href="/docs/Report_Wing_Spar.pdf" target="_blank" rel="noopener noreferrer" className={styles.reportLink}>(Report Link)</a>],
+        detail: 'Worked on optimization of aircraft wing spar and skin design for weight reduction and cost efficiency (achieved 16% weight reduction)'
       },
       {
         title: 'Finalist, National Model Rocketry India competition',

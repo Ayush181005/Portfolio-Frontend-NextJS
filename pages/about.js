@@ -54,7 +54,7 @@ export default function About() {
         <header className={styles.header}>
           <h1>About</h1>
           <p className={styles.intro}>
-            Three chapters, more or less &mdash; how a curious kid ended up running CFD on snow.
+            Three chapters, more or less, how a curious kid ended up running CFD on snow.
           </p>
         </header>
 
@@ -78,11 +78,11 @@ export default function About() {
             <span className={styles.bioLabel}>02 &middot; Research</span>
             <p>
               My work now sits at the intersection of Design, Manufacturing, and Thermal engineering
-              &mdash; the three pillars of the discipline I could never pick a favourite among. I use
-              CFD to treat snow as a granular fluid and design lattice structures that blunt avalanche
+              &mdash; the three pillars of mechanical engineering. I use
+              CFD to treat snow as a granular fluid with Bingham plastic behavior and design lattice structures that reduce avalanche
               impact, a project that won the Bhalodia&ndash;Khetan Research Excellence Award at IIT
               Gandhinagar and that I&apos;ve since continued as an undergraduate research fellow. In
-              parallel, I&apos;m developing TPMS-based heat exchanger geometries to cut pressure drop
+              parallel, I&apos;m developing TPMS-based heat exchanger geometries to reduce pressure drop
               without sacrificing heat transfer, and pointing that same design instinct at biomedical
               engineering &mdash; including a 3D-printed mandibular implant technique, tested
               successfully on a tumour patient, that avoids the need for a bone graft. I don&apos;t
