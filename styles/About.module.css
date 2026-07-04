@@ -1,0 +1,139 @@
+.header {
+  max-width: 640px;
+  margin-bottom: 44px;
+}
+
+.intro {
+  margin-top: 10px;
+  font-size: 15.5px;
+}
+
+.bioGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 780px;
+  margin-bottom: 70px;
+}
+
+.bioBlock {
+  padding-left: 22px;
+  border-left: 1.5px solid var(--rule-strong);
+}
+
+.bioLabel {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--blue);
+  margin-bottom: 10px;
+}
+
+.bioBlock p {
+  font-size: 15.5px;
+}
+
+/* -------- competencies -------- */
+
+.competenciesSection {
+  margin-bottom: 70px;
+}
+
+.competenciesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 36px;
+  margin-top: 10px;
+}
+
+.competencyCol {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.competencyHeading {
+  font-size: 13.5px;
+  color: var(--ink-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.tagWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+/* -------- education -------- */
+
+.educationSection {
+  margin-bottom: 20px;
+}
+
+.eduList {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.eduCard {
+  padding: 22px 24px;
+  background: var(--bg-panel);
+  border: 1px solid var(--rule);
+  border-radius: var(--border-radius);
+}
+
+.eduTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.eduLevel {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--brass);
+}
+
+.eduPeriod {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--ink-faint);
+}
+
+.eduDegree {
+  font-size: 1.08rem;
+  margin-bottom: 4px;
+}
+
+.eduSchool {
+  font-size: 14px;
+  color: var(--ink-muted);
+  margin-bottom: 8px;
+}
+
+.eduDetail {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: var(--ink-faint);
+}
+
+@media (max-width: 700px) {
+  .competenciesGrid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .eduTop {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}

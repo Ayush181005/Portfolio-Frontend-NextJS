@@ -1,48 +1,58 @@
 import React from 'react'
-import Link from 'next/link'
 import styles from '@/styles/Footer.module.css'
-import Image from 'next/image'
+import { GithubIcon, LinkedinIcon, MailIcon, InstagramIcon, StackOverflowIcon } from './Icons'
+
+const SOCIALS = [
+  { href: 'https://github.com/Ayush181005', label: 'GitHub', Icon: GithubIcon },
+  { href: 'https://linkedin.com/in/ayyyuusshhh', label: 'LinkedIn', Icon: LinkedinIcon },
+  { href: 'mailto:ayush.s181005@gmail.com', label: 'Email', Icon: MailIcon },
+  { href: 'https://stackoverflow.com/users/15543100/ayush?tab=profile', label: 'StackOverflow', Icon: StackOverflowIcon },
+  { href: 'https://instagram.com/ayyyuusshhh_', label: 'Instagram', Icon: InstagramIcon },
+]
 
 const Footer = () => {
-    return (
-        <footer>
-            <div className={styles.footerBody}>
-                <div className={styles.row}>
-                    <div className={styles.rowLeft}>
-                        Copyright &copy; {new Date().getFullYear()} |
-                    </div>
-                    <div className={styles.rowRight}>
-                        <a href='https://github.com/Ayush181005' className={styles.footerIcon} target='_blank' rel="noreferrer noopener" title='Github'>
-                            <Image src='/icons/github.svg' width={20} height={20} alt='Github icon' />
-                            &nbsp;
-                            <span className={styles.text}>Github</span>
-                        </a>
+  return (
+    <footer className={styles.footer}>
+      <div className={styles.titleBlock}>
+        <div className={styles.blockCol}>
+          <span className={styles.blockLabel}>Drawn by</span>
+          <span className={styles.blockValue}>Ayush Singh</span>
+        </div>
+        <div className={styles.blockCol}>
+          <span className={styles.blockLabel}>Discipline</span>
+          <span className={styles.blockValue}>Mechanical Engineering</span>
+        </div>
+        <div className={styles.blockCol}>
+          <span className={styles.blockLabel}>Based in</span>
+          <span className={styles.blockValue}>Gandhinagar, India</span>
+        </div>
+        <div className={styles.blockCol}>
+          <span className={styles.blockLabel}>Revision</span>
+          <span className={styles.blockValue}>{new Date().getFullYear()}</span>
+        </div>
+      </div>
 
-                        <a href='https://stackoverflow.com/users/15543100/ayush?tab=profile' className={styles.footerIcon} target='_blank' rel="noreferrer noopener" title='StackOverflow'>
-                            <Image src='/icons/stack-overflow.svg' width={20} height={20} alt='StackOverflow icon' />
-                            &nbsp;
-                            <span className={styles.text}>StackOverflow</span>
-                        </a>
+      <div className={styles.bottomRow}>
+        <p className={styles.copy}>&copy; {new Date().getFullYear()} Ayush Singh. All rights reserved.</p>
 
-                        <a href='"https://linkedin.com/in/ayyyuusshhh' className={styles.footerIcon} target='_blank' rel="noreferrer noopener" title='StackOverflow'>
-                            <Image src='/icons/linkedin.svg' width={20} height={20} alt='Linkedin icon' />
-                            &nbsp;
-                            <span className={styles.text}>Linkedin</span>
-                        </a>
-
-                        <a href='https://instagram.com/ayyyuusshhh_' className={styles.footerIcon} target='_blank' rel="noreferrer noopener" title='StackOverflow'>
-                            <Image src='/icons/instagram.svg' width={20} height={20} alt='Instagram icon' />
-                            &nbsp;
-                            <span className={styles.text}>Instagram</span>
-                        </a>
-                    </div>
-                </div>
-                <div className={styles.developer}>
-                    <small>Designed and Developed by <Link href="/">Ayush</Link></small>
-                </div>
-            </div>
-        </footer>
-    )
+        <div className={styles.iconRow}>
+          {SOCIALS.map(({ href, label, Icon }) => (
+            <a
+              key={label}
+              href={href}
+              className={styles.footerIcon}
+              target="_blank"
+              rel="noreferrer noopener"
+              title={label}
+            >
+              <Icon width={15} height={15} />
+              <span className={styles.text}>{label}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </footer>
+  )
 }
 
 export default Footer

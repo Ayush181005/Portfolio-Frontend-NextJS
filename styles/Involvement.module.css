@@ -1,0 +1,133 @@
+.header {
+  max-width: 680px;
+  margin-bottom: 50px;
+}
+
+.intro {
+  margin-top: 10px;
+  font-size: 15.5px;
+}
+
+.section {
+  margin-bottom: 54px;
+}
+
+/* -------- leadership -------- */
+
+.leadershipGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 14px;
+}
+
+.leadershipCard {
+  padding: 22px 24px;
+  background: var(--bg-panel);
+  border: 1px solid var(--rule);
+  border-radius: var(--border-radius);
+}
+
+.cardHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.cardHead h3 {
+  font-size: 1.02rem;
+}
+
+.period {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--blue);
+  white-space: nowrap;
+}
+
+.pointList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.pointList li {
+  position: relative;
+  padding-left: 18px;
+  font-size: 14px;
+  color: var(--ink-muted);
+  line-height: 1.6;
+}
+
+.pointList li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: var(--brass);
+  font-size: 12px;
+}
+
+/* -------- coordination -------- */
+
+.coordList {
+  display: flex;
+  flex-direction: column;
+  margin-top: 14px;
+}
+
+.coordItem {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.coordItem h3 {
+  font-size: 0.98rem;
+  margin-bottom: 6px;
+}
+
+.coordItem p {
+  font-size: 13.5px;
+  max-width: 62ch;
+}
+
+/* -------- outreach -------- */
+
+.outreachCard {
+  display: block;
+  margin-top: 14px;
+  padding: 22px 24px;
+  background: var(--bg-panel);
+  border: 1px solid var(--rule);
+  border-radius: var(--border-radius);
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.outreachCard:hover {
+  border-color: var(--blue-dim);
+  background: var(--bg-panel-raised);
+}
+
+.outreachCard h3 {
+  font-size: 1rem;
+  color: var(--blue);
+  margin-bottom: 6px;
+}
+
+.outreachCard p {
+  font-size: 13.5px;
+  max-width: 62ch;
+}
+
+/* -------- memberships -------- */
+
+.membershipWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}

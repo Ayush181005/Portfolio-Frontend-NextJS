@@ -1,0 +1,233 @@
+.header {
+  max-width: 680px;
+  margin-bottom: 50px;
+}
+
+.intro {
+  margin-top: 10px;
+  font-size: 15.5px;
+}
+
+/* -------- experience timeline -------- */
+
+.experienceSection {
+  margin-bottom: 64px;
+}
+
+.timelineList {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-top: 14px;
+}
+
+.timelineItem {
+  padding: 20px 24px;
+  background: var(--bg-panel);
+  border: 1px solid var(--rule);
+  border-radius: var(--border-radius);
+}
+
+.timelineHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.timelineHead h3 {
+  font-size: 1.05rem;
+}
+
+.timelinePeriod {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--brass);
+  white-space: nowrap;
+}
+
+.timelineOrg {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: var(--ink-faint);
+  margin-bottom: 12px;
+}
+
+/* -------- shared pointer list -------- */
+
+.pointList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pointList li {
+  position: relative;
+  padding-left: 18px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ink-muted);
+}
+
+.pointList li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--brass);
+  font-size: 12px;
+  top: 2px;
+}
+
+/* -------- projects -------- */
+
+.projectsSection {
+  margin-bottom: 60px;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 16px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 26px;
+  background: var(--bg-panel);
+  border: 1px solid var(--rule);
+  border-radius: var(--border-radius);
+  scroll-margin-top: 100px;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.card:hover {
+  border-color: var(--rule-strong);
+  background: var(--bg-panel-raised);
+}
+
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  gap: 10px;
+}
+
+.fieldPill {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--blue);
+  border: 1px solid var(--blue-dim);
+  padding: 4px 9px;
+  border-radius: 999px;
+}
+
+.duration {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--ink-faint);
+  white-space: nowrap;
+}
+
+.cardTitle {
+  font-size: 1.15rem;
+  line-height: 1.35;
+  margin-bottom: 6px;
+}
+
+.advisorLine {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: var(--ink-faint);
+  margin-bottom: 16px;
+}
+
+.advisorLink {
+  color: var(--ink-muted);
+  text-decoration: underline;
+  text-decoration-color: var(--rule-strong);
+  text-underline-offset: 3px;
+}
+.advisorLink:hover {
+  color: var(--blue);
+}
+
+.org {
+  color: var(--ink-faint);
+}
+
+.card .pointList {
+  margin-bottom: 4px;
+}
+
+.badge {
+  display: inline-flex;
+  align-self: flex-start;
+  margin-top: 14px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.03em;
+  color: var(--brass);
+  background: var(--brass-wash);
+  border: 1px solid var(--brass-dim);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* -------- earlier work -------- */
+
+.earlierSection {
+  padding-top: 20px;
+  border-top: 1px solid var(--rule);
+}
+
+.earlierList {
+  display: flex;
+  flex-direction: column;
+  margin-top: 14px;
+}
+
+.earlierItem {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr) minmax(0, 1.3fr);
+  gap: 16px;
+  align-items: baseline;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.earlierItem h4 {
+  font-size: 14.5px;
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.4;
+}
+
+.earlierAdvisor {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--ink-faint);
+}
+
+.earlierNote {
+  font-size: 13px;
+  color: var(--ink-muted);
+}
+
+@media (max-width: 860px) {
+  .cardGrid {
+    grid-template-columns: 1fr;
+  }
+  .earlierItem {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+}

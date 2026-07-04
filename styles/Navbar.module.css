@@ -1,170 +1,197 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(10, 14, 20, 0.82);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--rule);
+}
+
 .navbar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 35px;
-    font-family: 'Mouse Memoirs', sans-serif;
-    padding: 10px 0;
-    background-color: var(--navbar-bg-color);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  height: var(--navbar-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 clamp(20px, 5vw, 48px);
+  gap: 20px;
 }
 
-.navlist {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
+.logoMark {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
 }
 
-.navList .listItem {
-    display: inline-block;
-    padding: 20px 10px;
+.logoBox {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--blue);
+  border: 1px solid var(--blue-dim);
+  border-radius: 4px;
+  padding: 6px 8px;
+  line-height: 1;
 }
 
-.navbar a {
-    text-decoration: none;
+.logoText {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+  white-space: nowrap;
 }
 
-.navbarText.right:hover {
-    transform: rotate(-2deg) scale(1.05) translate(-4px, -7px);
-    transition: 0.1s;
-}
-.navbarText.left:hover {
-    transform: rotate(2deg) scale(1.05) translate(4px, -7px);
-    transition: 0.1s;
+.logoText em {
+  font-style: normal;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-top: 2px;
 }
 
-.navbarText.active:hover {
-    transform: none;
+.navList {
+  display: flex;
+  align-items: center;
+  gap: clamp(4px, 1.6vw, 22px);
+  list-style: none;
+}
+
+.listItem {
+  display: inline-block;
 }
 
 .navbarText {
-    color: var(--navbar-text-color);
-    display:inline-block;
+  position: relative;
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  letter-spacing: 0.03em;
+  color: var(--ink-muted);
+  padding: 8px 2px;
+  transition: color 0.15s ease;
+  white-space: nowrap;
+}
+
+.navbarText:hover {
+  color: var(--ink);
+}
+
+.navbarText::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 0%;
+  height: 1.5px;
+  background: var(--brass);
+  transition: width 0.2s ease;
+}
+
+.navbarText:hover::after {
+  width: 100%;
 }
 
 .navbarText.active {
-    color: var(--navbar-text-active-color);
-    text-shadow: #919191 0 0 10px;
+  color: var(--ink);
 }
 
-.navbarLogo {
-    border-radius: 50%;
-    height: 120px;
-    width: auto;
-    animation: logo-entry 1s ease-in-out 1s;
-}
-
-@keyframes logo-entry {
-    0%{transform: scale(0.96);}
-    20%{transform: scale(1.1);}
-    40%{transform: scale(0.58);}
-    60%{transform: scale(1.05);}
-    80%{transform: scale(1.01);}
-    100%{transform: scale(1);}
+.navbarText.active::after {
+  width: 100%;
+  background: var(--blue);
 }
 
 .menu {
-    padding: 2px;
-    cursor: pointer;
-    display: none;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 5px;
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  flex-shrink: 0;
 }
 
 .menuLine {
-    width: 30px;
-    height: 4px;
-    background-color: var(--hamburger-menu-color);
-    margin-bottom: 6px;
-    border-radius: 5px;
+  display: block;
+  width: 100%;
+  height: 1.5px;
+  background: var(--ink);
+  transition: transform 0.25s ease, opacity 0.2s ease, width 0.2s ease;
 }
 
-.menu:active .menuLine {
-    -webkit-animation: hamburger-anim 400ms ease-in-out;
-    animation: hamburger-anim 400ms ease-in-out alternate forwards;
+.menuOpen .menuLine:nth-child(1) {
+  transform: translateY(6.5px) rotate(45deg);
+}
+.menuOpen .menuLine:nth-child(2) {
+  opacity: 0;
+}
+.menuOpen .menuLine:nth-child(3) {
+  transform: translateY(-6.5px) rotate(-45deg);
 }
 
-@keyframes hamburger-anim {
-    0%{
-        transform: scale(0.96);
-    }
-    20%{
-        transform: scale(1.1);
-    }
-    40%{
-        transform: scale(0.58); /* 0.98 for small spring look */
-    }
-    60%{
-        transform: scale(1.05);
-    }
-    80%{
-        transform: scale(1.01);
-    }
-    100%{
-        transform: scale(1);
-    }
+@media (max-width: 900px) {
+  .menu {
+    display: flex;
+  }
+
+  .navList {
+    position: absolute;
+    top: var(--navbar-height);
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    background: rgba(10, 14, 20, 0.98);
+    border-bottom: 1px solid var(--rule);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .navListOpen {
+    max-height: 480px;
+  }
+
+  .listItem {
+    width: 100%;
+  }
+
+  .navbarText {
+    display: block;
+    width: 100%;
+    padding: 16px clamp(20px, 5vw, 48px);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .navbarText::after {
+    display: none;
+  }
+
+  .navbarText.active {
+    color: var(--blue);
+  }
+
+  .logoText {
+    font-size: 14px;
+  }
 }
 
-@media all and (max-width: 930px) {
-    .navList{
-        display: block;
-    }
-
-    .navbar {
-        flex-direction: column;
-    }
-    
-    .navbarLogo {
-        height: 80px;
-    }
-    
-    .menu {
-        display:block;
-        position: absolute;
-        top: 50px;
-        right: 20px;
-    }
-    
-    .navList .listItem {
-        display: block;
-    }
-
-    .navList .listItem:hover {
-        background-color: var(--nav-list-hover-color);
-    }
-
-    .navList .listItem:hover a {
-        transform: none;
-    }
-    
-    .navList {
-        width: 100%;
-        text-align: right;
-        margin-top: 30px;
-        transition: 0.5s;
-        animation-name: navbar-slide-in;
-        animation-duration: .5s;
-        animation-iteration-count: 1;
-    }
-    @keyframes navbar-slide-in {
-        0% {
-            transform: translateY(-100%);
-            opacity: 0;
-        }
-        30%{
-            opacity: 0;
-        }
-        100% {
-            transform: translateY(0);opacity:1;
-        }
-    }
-
-    .navLogoParent {
-        width: 100%;
-    }
-
-    .navLogoParent img {
-        margin-left: 30px;
-    }
-
-    .navListHidden {
-        display: none;
-    }
+@media (max-width: 420px) {
+  .logoText em {
+    display: none;
+  }
 }

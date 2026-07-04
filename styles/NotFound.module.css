@@ -1,0 +1,48 @@
+.wrap {
+  min-height: 60vh;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 140px clamp(20px, 5vw, 48px);
+  text-align: center;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--blue);
+  margin-bottom: 20px;
+}
+
+.tick {
+  color: var(--blue-dim);
+}
+
+.wrap h1 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  margin-bottom: 14px;
+}
+
+.copy {
+  margin-bottom: 30px;
+}
+
+.homeLink {
+  display: inline-flex;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  padding: 12px 20px;
+  border: 1px solid var(--rule-strong);
+  border-radius: 6px;
+  color: var(--ink);
+  transition: border-color 0.15s ease;
+}
+
+.homeLink:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+}

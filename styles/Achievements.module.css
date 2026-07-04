@@ -1,0 +1,134 @@
+.header {
+  max-width: 680px;
+  margin-bottom: 40px;
+}
+
+.intro {
+  margin-top: 10px;
+  font-size: 15.5px;
+}
+
+.statsRow {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 60px;
+}
+
+.statCard {
+  padding: 24px;
+  background: var(--bg-panel);
+  border: 1px solid var(--rule);
+  border-radius: var(--border-radius);
+}
+
+.statValue {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(1.7rem, 3.4vw, 2.3rem);
+  font-weight: 600;
+  color: var(--brass);
+  margin-bottom: 6px;
+}
+
+.statUnit {
+  font-size: 0.9rem;
+  color: var(--ink-faint);
+  margin-left: 2px;
+}
+
+.statLabel {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--ink-muted);
+}
+
+/* -------- timeline -------- */
+
+.timelineSection {
+  margin-bottom: 60px;
+}
+
+.timeline {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.timelineRow {
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1fr);
+  gap: 20px;
+  padding: 22px 0;
+  border-top: 1px solid var(--rule);
+}
+
+.timelineRow:first-child {
+  border-top: 1px solid var(--rule-strong);
+}
+
+.yearMark {
+  position: sticky;
+  top: 100px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--blue);
+  letter-spacing: 0.02em;
+}
+
+.itemsCol {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.timelineCard {
+  padding: 16px 20px;
+  background: var(--bg-panel);
+  border: 1px solid var(--rule);
+  border-radius: var(--border-radius);
+}
+
+.timelineCard h3 {
+  font-size: 0.98rem;
+  margin-bottom: 5px;
+}
+
+.timelineCard p {
+  font-size: 13px;
+}
+
+.timelineCardHighlight {
+  border-color: var(--brass-dim);
+  background: var(--brass-wash);
+}
+
+.timelineCardHighlight h3 {
+  color: var(--brass);
+}
+
+/* -------- certifications -------- */
+
+.certSection {
+  padding-top: 10px;
+}
+
+.certWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+@media (max-width: 700px) {
+  .statsRow {
+    grid-template-columns: 1fr;
+  }
+  .timelineRow {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .yearMark {
+    position: static;
+  }
+}

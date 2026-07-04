@@ -13,8 +13,7 @@ export default function App({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" sizes='any' />
       </Head>
-      <NextTopLoader color="rgba(1, 65, 255, 0.4)" initialPosition={0.3} height={3} speed={200} />
-      {/* <Navbar /> */}
+      <NextTopLoader color="#5ec8e0" initialPosition={0.3} height={2.5} showSpinner={false} speed={200} />
       {location !== "/_error" && <Navbar />}
       <Component {...pageProps} />
       {location !== "/_error" && <Footer />}

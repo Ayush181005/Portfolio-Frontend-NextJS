@@ -19,3 +19,15 @@ This repository contains the source code for **[TheAyush.in](https://theayush.in
 
 - **Next.js**: React framework for server-side rendering and static site generation.
 - **React.js**: Library for building user interfaces.
+
+---
+
+## 2026 Revamp Notes
+
+This site was rebuilt from the ground up as a research-focused portfolio. Quick orientation for whoever (you!) picks this up next:
+
+**Design system** — a "drafting sheet / blueprint" identity: near-black navy background, blueprint-cyan for anything in motion, brass-gold for anything finished/awarded. Type is Space Grotesk (headings), IBM Plex Sans (body), IBM Plex Mono (labels, stage tags, dates) — all defined as CSS variables in `styles/globals.css`.
+
+**Pages** — `/`, `/about`, `/experience` (Experience & Projects), `/publications`, `/achievements`, `/involvement`, `/contact`. Each new page uses global utility classes from `globals.css` (`pageContainer`, `sheetLabel`, `eyebrow`, `pill`) plus its own CSS module.
+
+**Signature element** — `components/StageTracker.js` + `styles/StageTracker.module.css`: the segmented "research status gauge" on the Experience & Projects cards. Ongoing projects get a pulsing live indicator at their current stage; published/accepted ones get a filled brass "stamp." Reused via `components/ProjectCard.js`.
