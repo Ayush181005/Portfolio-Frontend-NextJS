@@ -8,8 +8,9 @@ const GROUPS = [
     items: [
       {
         title: 'Property and Composition Dependence of Hot Cracking in LPBF for Different Materials',
-        authors: 'A. Singh, with Prof. Vishvesh Badheka',
+        authors: <><span className={styles.authorHighlight}>Ayush Singh</span>, Chaitya Doshi, Vishvesh Badheka</>,
         venue: 'Conference Proceedings, IMECE-2025, ASME · Hyderabad',
+        doi: 'https://doi.org/10.1115/IMECE-INDIA2025-161260',
       },
     ],
   },
@@ -19,13 +20,13 @@ const GROUPS = [
     items: [
       {
         title: 'Predictive ANN Model for Multi-Effect Distillation System Output',
-        authors: 'A. Singh, with Dr. Rahul Deharkar',
+        authors: <>Rahul Deharkar, Param Soni, <span className={styles.authorHighlight}>Ayush Singh</span></>,
         venue: 'Conference Proceedings, ICAWTM-25, Springer-Nature · PDEU',
       },
       {
         title: 'Physics-Aligned Modeling and Multi-Objective Fitness Function Development for Design Optimization of a Batch Reverse Osmosis System',
-        authors: 'A. Singh, with Dr. Rahul Deharkar',
-        venue: 'Conference Proceedings, IMECE-2026, ASME',
+        authors: <>Rahul Deharkar, Rasesh Nair, <span className={styles.authorHighlight}>Ayush Singh</span></>,
+        venue: 'Conference Proceedings, IMECE-2026, ASME · Chennai',
       },
     ],
   },
@@ -35,13 +36,13 @@ const GROUPS = [
     items: [
       {
         title: '3D-Printed Mandibular Implants Without a Bone Graft: A Novel Surgical Technique',
-        authors: 'A. Singh, with Prof. Pavan Gurrala',
-        venue: 'Conference Paper, ICBME 2026 · National University of Singapore',
+        authors: <><span className={styles.authorHighlight}>Ayush Singh</span>, Neev Kansara, Pavan Kumar Gurrala</>,
+        venue: 'Conference Paper, ICBME 2026 · Biomedical Engineering Society · National University of Singapore',
       },
       {
         title: 'Additive Manufacturing of Batteries: Recent Trends and Challenges',
-        authors: 'A. Singh, with Dr. Ojas Satbhai',
-        venue: 'Review Article, ICTEA',
+        authors: <><span className={styles.authorHighlight}>Ayush Singh</span>, Ojas Satbhai</>,
+        venue: 'Review Article, ICTEA · PDEU · McMaster University · Toronto Metropolitan University · Yalova University',
       },
     ],
   },
@@ -51,12 +52,12 @@ const GROUPS = [
     items: [
       {
         title: 'Design of Lattice-Based Structures for Mitigating Snow-Avalanche Impact via Granular-Fluid CFD Modeling',
-        authors: 'A. Singh, with Prof. Manish Kumar',
+        authors: <><span className={styles.authorHighlight}>Ayush Singh</span>, Manish Kumar, Pranab Kumar Mohapatra</>,
         venue: 'IIT Gandhinagar · targeting journal submission within 6 months',
       },
       {
         title: 'A Novel Design Approach for Pressure Drop Reduction in TPMS-Based Heat Exchangers',
-        authors: 'A. Singh, with Prof. Pavan Gurrala',
+        authors: <>Neev Kansara, <span className={styles.authorHighlight}>Ayush Singh</span>, Pavan Kumar Gurrala</>,
         venue: 'PDEU · targeting journal submission within 6 months',
       },
     ],
@@ -102,6 +103,11 @@ export default function Publications() {
                   <h3 className={styles.pubTitle}>{item.title}</h3>
                   <p className={styles.pubAuthors}>{item.authors}</p>
                   <p className={styles.pubVenue}>{item.venue}</p>
+                  <p className={styles.pubDoi}>
+                    <a href={item.doi} target="_blank" rel="noopener noreferrer" className={styles.pubLink}>
+                      {item.doi}
+                    </a>
+                  </p>
                 </li>
               ))}
             </ol>

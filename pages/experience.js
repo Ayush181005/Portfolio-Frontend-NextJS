@@ -5,20 +5,23 @@ import ProjectCard from '@/components/ProjectCard'
 const EXPERIENCE = [
   {
     role: 'Core Systems Engineer, Design & Analysis',
-    org: 'Apogee — Aerospace Society, PDEU',
+    org: 'Team Zenith & Apogee3 club — Aerospace Society, PDEU',
     period: 'Jun 2023 — Present',
     points: [
-      'Founder & Technical Head, PDEU Rocketry Team (2025) — systems engineering across propulsion, design & analysis',
+      'Founder & Technical Head, Team Zenith - PDEU Rocketry Team (2025) — systems engineering across propulsion, design & analysis',
       'Finalist, National Model Rocketry India competition; FRR-approved; secured ₹3,00,000 in sponsorship',
       'Treasurer, Apogee Aerospace Society (2024) as a core team member along with technical work',
+      'Same thrust with almost half the fuel weight - redesigned the propellant and additively manufactured CD nozzle, validated in static fire tests and rocket launches',
+      'Rocket motor fitting and body design and analysis, electronics subsystems, and launch pad design & fabrication — all in-house',
     ],
   },
   {
-    role: 'Summer Research Intern',
-    org: 'IIT Gandhinagar — Prof. Manish Kumar',
+    role: 'Undergraduate Research Intern & Summer Research Intern',
+    org: 'Department of Civil Engineering, IIT Gandhinagar',
     period: 'May — Jul 2025',
     points: [
-      'VOF-based CFD simulation of avalanche flow in Ansys Fluent, validated to within 5% of experimental data',
+      'Selected for SRIP internship (~0.4% selection rate), continued as an Undergraduate Research Fellow in the group',
+      'VOF-based CFD simulation of avalanche flow (Bingham plastic) in Ansys Fluent, validated to within 5% of experimental data',
       'Structural testing of 2 lattice geometries — reduced peak impact force by up to 30%',
     ],
   },
@@ -137,14 +140,9 @@ const COMPLETE_PROJECTS = [
 
 const EARLIER_WORK = [
   {
-    title: 'Real-time monitoring system for LPBF & GTAW processes',
+    title: 'Acoustic signal based real-time monitoring system for LPBF & GTAW processes for crack mitigation in bio-compatible ZK60 magnesium implants',
     advisor: 'Dr. Ojas Satbhai, PDEU',
     note: 'The project that started it all — two years, first year onward',
-  },
-  {
-    title: 'Acoustic-signature crack mitigation in bio-compatible ZK60 magnesium implants',
-    advisor: 'Dr. Ojas Satbhai, PDEU',
-    note: 'Companion work within the same research group',
   },
   {
     title: 'Additive Manufacturing of Batteries: Recent Trends and Challenges (review)',

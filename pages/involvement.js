@@ -8,6 +8,8 @@ const LEADERSHIP = [
     points: [
       'Built the team from scratch within Apogee, PDEU\'s aerospace society',
       'Also serve as Core Technical Engineer & Treasurer, Apogee — handling budgets and sponsorships alongside propulsion and design work',
+      'Same thrust with almost half the fuel weight - redesigned the propellant and additively manufactured CD nozzle, validated in static fire tests and rocket launches',
+      'Rocket motor fitting and body design and analysis, electronics subsystems, and launch pad design & fabrication — all in-house',
     ],
   },
   {
@@ -34,6 +36,20 @@ const LEADERSHIP = [
     ],
   },
   {
+    role: 'Space Science content developer for website and outreach, Tanmaye\'s Amazing Space',
+    period: '2023',
+    points: [
+      'ISRO-recognized space science outreach tutor',
+      'Researched and developed content on the Sun, focusing on the solar flare cycle, solar storms, and their impact on Earth\'s magnetosphere and satellites',
+      <a href="https://tanmayesamazingspace.com/" target="_blank" rel="noopener noreferrer" className={styles.siteLink}>
+        Tanmaye's Amazing Space Link
+      </a>,
+      <a href="https://our-sun.my.canva.site/the-sun-tanmayes-amazing-space" target="_blank" rel="noopener noreferrer" className={styles.siteLink}>
+        Solar Flares and Their Impact on Earth Link
+      </a>,
+    ],
+  },
+  {
     role: 'Founding President, SciKnowTech VIPNET Club - SciKnowTech Education Foundation',
     period: '2021 — 2023',
     points: [
@@ -45,16 +61,45 @@ const LEADERSHIP = [
       'Still Serving as a mentor and advisor to the club, helping with preparation of STEM projects and ideations for year-end carnival and organizing flagship events (eggdrop challenge, bridge building, parachute challenge)',
     ],
   },
+  {
+    role: 'Logistics Subcommittee, Daastan - The dramatics club of PDEU',
+    period: '2023',
+    points: [
+      'Organized and managed logistics for the annual dramatics festival, including stage setup, lighting, sound systems, and coordination with performers and crew',
+      '4 events, including flagship event \'Emotions\', and started learning acting',
+    ],
+  },
+  {
+    role: 'Technical Subcommittee, Encode - The programming club of PDEU',
+    period: '2023',
+    points: [
+      'Helped with my technical expertise in programming to conduct workshops and events for students',
+    ],
+  },
+  {
+    role: 'Technical trainer, Royal Tecknosoft Pvt. Ltd.',
+    period: '2020',
+    points: [
+      'Trained 800+ students across the world (online during COVID-19 lockdown) in C, C++, and game development using Unity',
+      <a href="https://royaltechnosoft.com/" target="_blank" rel="noopener noreferrer" className={styles.siteLink}>
+        Royal Tecknosoft Pvt. Ltd. Website Link
+      </a>,
+    ],
+  },
 ]
 
 const COORDINATION = [
   {
-    role: 'CFD (FDM) Python Workshops',
-    detail: 'Coordinated and taught workshops that trained 100+ BTech, MTech, and PhD students at PDEU',
+    role: 'CFD (FDM & FVM) Python Workshops',
+    detail: 'Coordinated and assisted Dr. Anirudh Kulkarni in peer-to-peer workshops that trained 100+ BTech, MTech, and PhD students at PDEU',
   },
   {
-    role: '1st International Battery Symposium — ICTEA 2024, PDEU, McMaster University, Toronto Metropolitan University, Yalova University',
-    detail: 'Lead coordinator for the symposium, run jointly with McMaster University, Toronto Metropolitan University, Yalova University, and PDEU; presented a review article',
+    role: 'Lead Coordinator, 1st International Battery Symposium — ICTEA 2024, PDEU, McMaster University, Toronto Metropolitan University, Yalova University',
+    detail: 'Overall event management with overview of the symposium, speaker coordination, logistics, graphic design, and session management; 200+ participants from 5+ countries; presented a review article on battery thermal management',
+  },
+  {
+    role: 'FEA Bootcamp, ASME PDEU Student Chapter',
+    detail: 'Coordinated the workshop with Dr. Pravesh Kumar and Dr. Manjeet Keshav, ASME student chapter guide, training 50+ students in FEA mathematics, & basic use of ANSYS Mechanical',
   },
 ]
 
@@ -87,9 +132,9 @@ export default function Involvement() {
         <header className={styles.header}>
           <h1>Involvement</h1>
           <p className={styles.intro}>
-            Research doesn&apos;t happen in a vacuum, and neither does a good university experience
-            &mdash; the roles, workshops, and outreach that run alongside the lab work.
+            A good university experience is beyond academics. I have been actively involved in leadership, coordination, and outreach activities, both within and outside the university.
           </p>
+          <p>The skills I wanted to learn, I helped the university organize workshops and events for, and the skills I already had, I shared with others through volunteering and mentoring.</p>
         </header>
 
         <section className={styles.section}>

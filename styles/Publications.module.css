@@ -91,8 +91,28 @@
   color: var(--ink-faint);
 }
 
+.pubDoi {
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
 @media (max-width: 600px) {
   .pubItem {
     padding-left: 30px;
   }
+}
+
+.authorHighlight {
+  color: var(--brass);
+  font-weight: 500;
+}
+
+.pubLink {
+  color: var(--ink-muted);
+  text-decoration: underline;
+  text-decoration-color: var(--rule-strong);
+  text-underline-offset: 3px;
+}
+.pubLink:hover {
+  color: var(--blue);
 }
