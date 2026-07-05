@@ -1,14 +1,67 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://www.theayush.in</loc>
-    <lastmod>2025-03-08T15:02:24.021Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.theayush.in/gallery</loc>
-    <lastmod>2025-03-08T15:02:24.021Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.theayush.in/contact</loc>
-    <lastmod>2025-03-08T15:02:24.021Z</lastmod>
-  </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="https://www.xml-sitemaps.com/css/sitemap.css"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:fo="http://www.w3.org/1999/XSL/Format"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://www.theayush.in/</loc>
+  <lastmod>2026-07-05T08:41:36+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.theayush.in/about</loc>
+  <lastmod>2026-07-05T08:41:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.theayush.in/experience</loc>
+  <lastmod>2026-07-05T08:41:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.theayush.in/publications</loc>
+  <lastmod>2026-07-05T08:41:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.theayush.in/achievements</loc>
+  <lastmod>2026-07-05T08:41:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.theayush.in/involvement</loc>
+  <lastmod>2026-07-05T08:41:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.theayush.in/contact</loc>
+  <lastmod>2026-07-05T08:41:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.theayush.in/docs/Ayush%20Singh%20CV.pdf</loc>
+  <lastmod>2026-07-05T08:41:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.theayush.in/docs/Avalanche%20CFD_SRIP2025_IIT-Gandhinagar_Report.pdf</loc>
+  <lastmod>2026-07-05T08:41:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.theayush.in/docs/Report_Wing_Spar.pdf</loc>
+  <lastmod>2026-07-05T08:41:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.theayush.in/gallery</loc>
+  <lastmod>2025-03-08T15:02:24.021Z</lastmod>
+  <priority>0.64</priority>
+</url>
 </urlset>
