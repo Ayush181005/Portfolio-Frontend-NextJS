@@ -22,7 +22,7 @@ const Contact = () => {
         const data = Object.fromEntries(formData.entries())
         data['g-recaptcha-response'] = token
 
-        const response = await fetch(`https://formsubmit.co/ajax/${process.env.FORMSUBMIT_KEY}`, {
+        const response = await fetch(`https://formsubmit.co/ajax/${process.env.NEXT_PUBLIC_FORMSUBMIT_KEY}`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -57,7 +57,7 @@ const Contact = () => {
 
       <main className="pageContainer">
         <p className="sheetLabel">
-          <span className="tick">+</span> Sheet 07 &middot; Contact
+          <span className="tick">+</span> Drawing Sheet 07 &middot; Contact
         </p>
 
         <div className={styles.grid}>
