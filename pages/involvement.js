@@ -126,7 +126,7 @@ export default function Involvement() {
 
       <main className="pageContainer">
         <p className="sheetLabel">
-          <span className="tick">+</span> Sheet 06 &middot; Involvement
+          <span className="tick">+</span> Drawing Sheet 06 &middot; Involvement
         </p>
 
         <header className={styles.header}>

@@ -8,7 +8,7 @@ const COMPETENCIES = [
   },
   {
     heading: 'Manufacturing & Fabrication',
-    items: ['LPBF', 'WAAM', 'EDM', 'CNC Turning', 'GTAW / GMAW', 'Laser & Ultrasonic Welding', 'FSW', 'Resistance & Plasma Welding'],
+    items: ['LPBF (Intech Additive)', 'WAAM', 'EDM', 'CNC Turning', 'GTAW / GMAW', 'Laser & Ultrasonic Welding', 'FSW', 'Resistance & Plasma Welding', '3D printing', 'Casting', 'Traditional Machining'],
   },
   {
     heading: 'Programming & Data',
@@ -16,7 +16,11 @@ const COMPETENCIES = [
   },
   {
     heading: 'Research & Systems',
-    items: ['CFD Modeling', 'Granular Flow Analysis', 'Propulsion & Systems Engineering', 'Technical Writing'],
+    items: ['CFD Modeling', 'Non-Newtonian Granular Flow Analysis', 'Propulsion & Systems Engineering', 'Technical Writing'],
+  },
+  {
+    heading: 'Beyond Academia',
+    items: ['Fine Arts', 'Trekking', 'Lawn Tennis', 'Karate', 'Sketching & Painting', 'Travel & Culture'],
   },
 ]
 
@@ -48,7 +52,7 @@ export default function About() {
 
       <main className="pageContainer">
         <p className="sheetLabel">
-          <span className="tick">+</span> Sheet 02 &middot; About
+          <span className="tick">+</span> Drawing Sheet 02 &middot; About
         </p>
 
         <header className={styles.header}>

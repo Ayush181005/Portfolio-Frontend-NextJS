@@ -9,7 +9,7 @@ const GROUPS = [
       {
         title: 'Property and Composition Dependence of Hot Cracking in LPBF for Different Materials',
         authors: <><span className={styles.authorHighlight}>Ayush Singh</span>, Chaitya Doshi, Vishvesh Badheka</>,
-        venue: 'Conference Proceedings, IMECE-2025, ASME · Hyderabad',
+        venue: 'Conference Paper, IMECE-2025, ASME · Hyderabad',
         doi: 'https://doi.org/10.1115/IMECE-INDIA2025-161260',
       },
     ],
@@ -21,12 +21,12 @@ const GROUPS = [
       {
         title: 'Predictive ANN Model for Multi-Effect Distillation System Output',
         authors: <>Rahul Deharkar, Param Soni, <span className={styles.authorHighlight}>Ayush Singh</span></>,
-        venue: 'Conference Proceedings, ICAWTM-25, Springer-Nature · PDEU',
+        venue: 'Conference Paper, ICAWTM-25, Springer-Nature · PDEU',
       },
       {
         title: 'Physics-Aligned Modeling and Multi-Objective Fitness Function Development for Design Optimization of a Batch Reverse Osmosis System',
         authors: <>Rahul Deharkar, Rasesh Nair, <span className={styles.authorHighlight}>Ayush Singh</span></>,
-        venue: 'Conference Proceedings, IMECE-2026, ASME · Chennai',
+        venue: 'Conference Paper, IMECE-2026, ASME · Chennai',
       },
     ],
   },
@@ -42,7 +42,7 @@ const GROUPS = [
       {
         title: 'Additive Manufacturing of Batteries: Recent Trends and Challenges',
         authors: <><span className={styles.authorHighlight}>Ayush Singh</span>, Ojas Satbhai</>,
-        venue: 'Review Article, ICTEA · PDEU · McMaster University · Toronto Metropolitan University · Yalova University',
+        venue: 'Conference Paper, ICTEA · PDEU · McMaster University · Toronto Metropolitan University · Yalova University',
       },
     ],
   },
@@ -75,7 +75,7 @@ export default function Publications() {
 
       <main className="pageContainer">
         <p className="sheetLabel">
-          <span className="tick">+</span> Sheet 04 &middot; Publications
+          <span className="tick">+</span> Drawing Sheet 04 &middot; Publications
         </p>
 
         <header className={styles.header}>

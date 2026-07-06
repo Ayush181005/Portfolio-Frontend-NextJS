@@ -73,7 +73,7 @@ export default function Achievements() {
 
       <main className="pageContainer">
         <p className="sheetLabel">
-          <span className="tick">+</span> Sheet 05 &middot; Achievements
+          <span className="tick">+</span> Drawing Sheet 05 &middot; Achievements
         </p>
 
         <header className={styles.header}>

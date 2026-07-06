@@ -15,8 +15,8 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.titleBlock}>
         <div className={styles.blockCol}>
-          <span className={styles.blockLabel}>Drawn by</span>
-          <span className={styles.blockValue}>Ayush Singh</span>
+          <span className={styles.blockLabel}>References</span>
+          <span className={styles.blockValue}>[1] A. Singh, Ayush's Life: Earth, 2026.</span>
         </div>
         <div className={styles.blockCol}>
           <span className={styles.blockLabel}>Discipline</span>
@@ -24,12 +24,12 @@ const Footer = () => {
         </div>
         <div className={styles.blockCol}>
           <span className={styles.blockLabel}>Based in</span>
-          <span className={styles.blockValue}>Gandhinagar, India</span>
+          <span className={styles.blockValue}>Ahmedabad, India</span>
         </div>
-        <div className={styles.blockCol}>
+        {/* <div className={styles.blockCol}>
           <span className={styles.blockLabel}>Revision</span>
           <span className={styles.blockValue}>{new Date().getFullYear()}</span>
-        </div>
+        </div> */}
       </div>
 
       <div className={styles.bottomRow}>

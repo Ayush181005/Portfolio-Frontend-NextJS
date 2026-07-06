@@ -39,7 +39,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Ayush Singh — Mechanical Engineering Researcher</title>
+        <title>Ayush Singh | Mechanical Engineering Researcher</title>
         <meta
           name="description"
           content="Ayush Singh is a mechanical engineering researcher at PDEU working across granular-flow CFD, TPMS heat exchangers, additive manufacturing, and biomedical implant design, alongside model rocketry leadership and science outreach."
@@ -162,7 +162,7 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <span className={styles.figureCaption}>Fig. 1: Ayush presenting his paper on additive manufacturing of batteries at the International Symposium on Battery Technology, ICTEA, 2023</span>
+              <span className={styles.figureCaption}>Fig. 1: Ayush presenting his paper on additive manufacturing of batteries at the International Symposium on Battery Technology, ICTEA, 2023 [1]</span>
             </div>
           </div>
         </section>

@@ -162,7 +162,7 @@ export default function Experience() {
 
       <main className="pageContainer">
         <p className="sheetLabel">
-          <span className="tick">+</span> Sheet 03 &middot; Experience & Projects
+          <span className="tick">+</span> Drawing Sheet 03 &middot; Experience & Projects
         </p>
 
         <header className={styles.header}>
