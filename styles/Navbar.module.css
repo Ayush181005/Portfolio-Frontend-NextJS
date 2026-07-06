@@ -8,6 +8,15 @@
   border-bottom: 1px solid var(--rule);
 }
 
+@media (prefers-color-scheme: light) {
+  .header {
+    background: rgba(255, 255, 255, 0.82);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--rule);
+  }
+}
+
 .navbar {
   max-width: var(--max-width);
   margin: 0 auto;
