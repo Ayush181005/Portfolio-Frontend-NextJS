@@ -26,7 +26,7 @@ const TIMELINE = [
     items: [
       {
         title: '10-day Residential Model Rocketry Training',
-        detail: 'Selected among 70 students nationwide — IN-SPACe, ISRO, Bengaluru',
+        detail: 'Selected among 70 students nationwide, IN-SPACe, ISRO, Bengaluru',
       },
     ],
   },

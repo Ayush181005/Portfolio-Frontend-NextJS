@@ -4,7 +4,7 @@ import styles from '@/styles/About.module.css'
 const COMPETENCIES = [
   {
     heading: 'Simulation & CAD',
-    items: ['Ansys Fluent', 'OpenFOAM', 'Ansys Mechanical (FEA)', 'SolidWorks', 'Siemens NX', 'Fusion 360', 'MATLAB'],
+    items: ['Ansys Fluent', 'N-Topology', 'OpenFOAM', 'Ansys Mechanical (FEA)', 'SolidWorks', 'Siemens NX', 'Fusion 360', 'MATLAB'],
   },
   {
     heading: 'Manufacturing & Fabrication',
@@ -12,15 +12,15 @@ const COMPETENCIES = [
   },
   {
     heading: 'Programming & Data',
-    items: ['Python', 'C++', 'Java', 'MATLAB', 'LaTeX', 'Full-Stack Web Dev'],
+    items: ['Python', 'C++', 'C', 'Java', 'MATLAB', 'LaTeX', 'Full-Stack Web Dev', 'PHP', 'Game Dev (Unity)'],
   },
   {
-    heading: 'Research & Systems',
-    items: ['CFD Modeling', 'Non-Newtonian Granular Flow Analysis', 'Propulsion & Systems Engineering', 'Technical Writing'],
+    heading: 'Research',
+    items: ['CFD Modeling', 'Non-Newtonian Granular Flow Analysis', 'Avalanche Modeling', 'Structural Design', 'Biomedical Design', 'TPMS Design', 'Heat Transfer', 'Biomechanics', 'Propulsion & Systems Engineering', 'Technical Writing'],
   },
   {
     heading: 'Beyond Academia',
-    items: ['Fine Arts', 'Trekking', 'Lawn Tennis', 'Karate', 'Sketching & Painting', 'Travel & Culture'],
+    items: ['Fine Arts', 'High Altitude Trekking', 'Lawn Tennis', 'Karate', 'Sketching & Painting', 'Travel & Culture'],
   },
 ]
 
@@ -30,7 +30,7 @@ const EDUCATION = [
     degree: 'Bachelor of Technology, Mechanical Engineering',
     school: 'Pandit Deendayal Energy University (PDEU), Gandhinagar',
     period: '2023 — Present',
-    detail: 'CPI 9.88 / 10 (WES GPA 3.96 / 4.0) · 1st Rank in Mechanical Engineering · 100% Merit Scholarship',
+    detail: 'CPI 9.88 / 10 (WES GPA 3.97 / 4.0) · 1st Rank in Mechanical Engineering · 100% Merit Scholarship',
   },
   {
     level: 'Schooling',
@@ -98,8 +98,8 @@ export default function About() {
           <article className={styles.bioBlock}>
             <span className={styles.bioLabel}>03 &middot; Beyond the lab</span>
             <p>
-              None of this happens in isolation. I lead the technical side of Apogee, PDEU&apos;s
-              aerospace society, where I&apos;ve spent three years on propulsion, structural design,
+              None of this happens in isolation. I lead the technical side of Apogee3, PDEU&apos;s
+              aerospace society, and Team Zenith, where I&apos;ve spent three years on propulsion, structural design,
               and systems engineering for competition rockets &mdash; and learned nearly as much about
               budgets and team management as I did about thrust curves. I&apos;ve played competitive
               lawn tennis for fifteen years and now serve as the university&apos;s Tennis Secretary; I

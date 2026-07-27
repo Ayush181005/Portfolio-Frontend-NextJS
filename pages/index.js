@@ -5,10 +5,10 @@ import { GithubIcon, LinkedinIcon, MailIcon, InstagramIcon, DownloadIcon, ArrowR
 import Image from 'next/image'
 
 const STATS = [
-  { value: '9.88', unit: '/10', label: 'CPI, Mechanical Engineering' },
-  { value: '7', unit: '', label: 'Research projects, published to ongoing' },
-  { value: '₹50K', unit: '', label: 'Research Excellence Award, IIT Gandhinagar' },
-  { value: '3', unit: 'yrs', label: 'Continuous research experience' },
+  { value: '9.88', unit: '/10', label: 'CPI, 4th year, Mechanical Engineering' },
+  { value: '170 + 147', unit: '= 317 + 3', label: 'GRE Quant + Verbal + AWA' },
+  { value: '#1', unit: ' ₹50,000', label: 'Research Excellence Award, IIT Gandhinagar' },
+  { value: '3', unit: 'yrs', label: 'Research experience, 7 research projects (published to ongoing)' },
 ]
 
 const FEATURED = [
@@ -162,7 +162,7 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <span className={styles.figureCaption}>Fig. 1: Ayush presenting his paper on additive manufacturing of batteries at the International Symposium on Battery Technology, ICTEA, 2023 [1]</span>
+              <span className={styles.figureCaption}>Fig. 1: Ayush presenting his paper on additive manufacturing of batteries at the International Symposium on Battery Technology, ICTEA, 2023 <a href="#ref1">[1]</a></span>
             </div>
           </div>
         </section>

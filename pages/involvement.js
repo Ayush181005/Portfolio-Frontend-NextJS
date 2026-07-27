@@ -3,12 +3,12 @@ import styles from '@/styles/Involvement.module.css'
 
 const LEADERSHIP = [
   {
-    role: 'Founder & Technical Head, PDEU Rocketry Team',
+    role: 'Founder & Technical Head, Team Zenith, Model Rocketry Team of PDEU',
     period: '2025 — Present',
     points: [
-      'Built the team from scratch within Apogee, PDEU\'s aerospace society',
-      'Also serve as Core Technical Engineer & Treasurer, Apogee — handling budgets and sponsorships alongside propulsion and design work',
-      'Same thrust with almost half the fuel weight - redesigned the propellant and additively manufactured CD nozzle, validated in static fire tests and rocket launches',
+      'Built the team from scratch within Apogee3, PDEU\'s aerospace society',
+      'Also serve as Core Technical Engineer & Treasurer, Apogee3 — handling budgets and sponsorships alongside propulsion and design work',
+      'Same thrust with almost half the fuel weight - redesigned the propellant and designed additively manufactured CD nozzle, validated in static fire tests and rocket launches',
       'Rocket motor fitting and body design and analysis, electronics subsystems, and launch pad design & fabrication — all in-house',
     ],
   },

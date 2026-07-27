@@ -4,25 +4,31 @@ import ProjectCard from '@/components/ProjectCard'
 
 const EXPERIENCE = [
   {
+    role: 'Undergraduate Research Intern & Summer Research Intern',
+    org: 'Department of Civil Engineering, IIT Gandhinagar',
+    period: 'May 2025 — Present',
+    points: [
+      'Selected for SRIP internship (~0.4% selection rate), continued as an Undergraduate Research Fellow in the group',
+      'VOF-based CFD simulation of avalanche flow (Bingham plastic) in Ansys Fluent, validated to within 5% of experimental data',
+      'Structural testing of 2 lattice geometries — reduced peak impact force by up to 30%',
+      <>
+        Began as a Student Research Internship Program (SRIP) project — now continuing as an Undergraduate Research Fellow in the group{' '}
+        <a href="/docs/Avalanche CFD_SRIP2025_IIT-Gandhinagar_Report.pdf" className={styles.advisorLink} target="_blank" rel="noopener noreferrer">
+          (Summer Internship Report Link)
+        </a>
+      </>,
+    ],
+  },
+  {
     role: 'Core Systems Engineer, Design & Analysis',
     org: 'Team Zenith & Apogee3 club — Aerospace Society, PDEU',
     period: 'Jun 2023 — Present',
     points: [
       'Founder & Technical Head, Team Zenith - PDEU Rocketry Team (2025) — systems engineering across propulsion, design & analysis',
       'Finalist, National Model Rocketry India competition; FRR-approved; secured ₹3,00,000 in sponsorship',
-      'Treasurer, Apogee Aerospace Society (2024) as a core team member along with technical work',
-      'Same thrust with almost half the fuel weight - redesigned the propellant and additively manufactured CD nozzle, validated in static fire tests and rocket launches',
+      'Treasurer, Apogee3 Aerospace Society (2024) as a core team member along with rocket design and analysis',
+      'Same thrust with almost half the fuel weight - redesigned the propellant and designed additively manufactured CD nozzle, validated in static fire tests and rocket launches',
       'Rocket motor fitting and body design and analysis, electronics subsystems, and launch pad design & fabrication — all in-house',
-    ],
-  },
-  {
-    role: 'Undergraduate Research Intern & Summer Research Intern',
-    org: 'Department of Civil Engineering, IIT Gandhinagar',
-    period: 'May — Jul 2025',
-    points: [
-      'Selected for SRIP internship (~0.4% selection rate), continued as an Undergraduate Research Fellow in the group',
-      'VOF-based CFD simulation of avalanche flow (Bingham plastic) in Ansys Fluent, validated to within 5% of experimental data',
-      'Structural testing of 2 lattice geometries — reduced peak impact force by up to 30%',
     ],
   },
 ]

@@ -33,7 +33,7 @@ const Footer = () => {
       </div>
 
       <div className={styles.bottomRow}>
-        <p className={styles.copy}>&copy; {new Date().getFullYear()} Ayush Singh. All rights reserved.</p>
+        <p className={styles.copy} id='ref1'>&copy; {new Date().getFullYear()} Ayush Singh. All rights reserved.</p>
 
         <div className={styles.iconRow}>
           {SOCIALS.map(({ href, label, Icon }) => (

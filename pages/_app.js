@@ -14,9 +14,9 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" sizes='any' />
       </Head>
       <NextTopLoader color="#5ec8e0" initialPosition={0.3} height={2.5} showSpinner={false} speed={200} />
-      {location !== "/_error" && <Navbar />}
+      {location !== "/_error" && location !== "/toaahana" && <Navbar />}
       <Component {...pageProps} />
-      {location !== "/_error" && <Footer />}
+      {location !== "/_error" && location !== "/toaahana" && <Footer />}
     </>
   );
 }
