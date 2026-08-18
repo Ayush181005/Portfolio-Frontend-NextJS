@@ -17,7 +17,7 @@ const TIMELINE = [
       },
       {
         title: 'Merit Scholarship recipient',
-        detail: '100% tuition fee waiver — ₹1,30,000 per semester, PDEU',
+        detail: '100% tuition fee waiver of ₹10,40,000, PDEU',
       },
     ],
   },

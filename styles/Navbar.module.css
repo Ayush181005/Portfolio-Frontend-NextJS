@@ -2,16 +2,10 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(10, 14, 20, 0.82);
+  background: --bg;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--rule);
-}
-
-@media (prefers-color-scheme: light) {
-  .header {
-    background: rgba(255, 255, 255, 0.82);
-  }
 }
 
 .navbar {
@@ -23,6 +17,7 @@
   justify-content: space-between;
   padding: 0 clamp(20px, 5vw, 48px);
   gap: 20px;
+  font-weight: bold;
 }
 
 .logoMark {

@@ -7,10 +7,11 @@ import Image from 'next/image'
 const NAV_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
-  { href: '/experience', label: 'Experience & Projects' },
+  { href: '/experience', label: 'Experience' },
   { href: '/publications', label: 'Publications' },
   { href: '/achievements', label: 'Achievements' },
   { href: '/involvement', label: 'Involvement' },
+  // { href: '/gallery', label: 'Gallery' },
   { href: '/contact', label: 'Contact' },
 ]
 
@@ -43,7 +44,7 @@ const Navbar = () => {
           
           <span className={styles.logoText}>
             Ayush Singh
-            <em>Mechanical Engineering Research</em>
+            <em>Mechanical Engineering</em>
           </span>
         </Link>
 

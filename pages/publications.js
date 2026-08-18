@@ -28,6 +28,11 @@ const GROUPS = [
         authors: <>Rahul Deharkar, Rasesh Nair, <span className={styles.authorHighlight}>Ayush Singh</span></>,
         venue: 'Conference Paper, IMECE-2026, ASME · Chennai',
       },
+      {
+        title: 'Physical Interpretation and Parameter Sensitivity of the Three-Element Windkessel Model, with Implications for Vascular Stenting',
+        authors: <><span className={styles.authorHighlight}>Ayush Singh</span>, Dev Pateliya, Ojas Satbhai, Jnana Ranjan Senapati</>,
+        venue: 'Conference Paper, FMFP-2026 · NIT Rourkela',
+      },
     ],
   },
   {

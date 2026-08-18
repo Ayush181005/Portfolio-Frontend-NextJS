@@ -1,27 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
 :root {
-  --max-width: 1180px;
-  --border-radius: 10px;
-  /* ---- surfaces ---- */
-  --bg: #0a0e14;
-  --bg-panel: #10151d;
-  --bg-panel-raised: #161d28;
-  --bg-panel-hover: #1a2230;
+  /* --max-width: 1180px;
+  --border-radius: 10px; */
+    /* ---- surfaces ---- */
+  --bg: #F9FAF4; /* Cream base */
+  --bg-panel: #ffffff;
+  --bg-panel-raised: #efefe8;
+  --bg-panel-hover: #e4e5dd;
+  
   /* ---- ink ---- */
-  --ink: #edeff3;
-  --ink-muted: #8b93a3;
-  --ink-faint: #545d6e;
+  --ink: #4A6163; /* Slate */
+  --ink-muted: #6a888b;
+  --ink-faint: #8daeb1;
+  
   /* ---- accents ---- */
-  --blue: #5ec8e0;
-  --blue-dim: #3a7c93;
-  --blue-wash: rgba(94, 200, 224, 0.1);
-  --brass: #d4a24e;
-  --brass-dim: #9c7a3c;
-  --brass-wash: rgba(212, 162, 78, 0.12);
+  --blue: #F17A7E; /* Coral Pink Primary */
+  --blue-dim: #d46a6e;
+  --blue-wash: rgba(241, 122, 126, 0.1);
+  --brass: #F9A66C; /* Peach Secondary */
+  --brass-dim: #d48e5c;
+  --brass-wash: rgba(249, 166, 108, 0.15);
+  
   /* ---- lines ---- */
-  --rule: rgba(237, 239, 243, 0.1);
-  --rule-strong: rgba(237, 239, 243, 0.18);
-  --grid-line: rgba(94, 200, 224, 0.055);
+  --rule: rgba(74, 97, 99, 0.1);
+  --rule-strong: rgba(74, 97, 99, 0.2);
+  --grid-line: rgba(241, 122, 126, 0.06);
+
+  --max-width: 1180px;
+  --border-radius: 16px; /* Slightly softer for the retro vibe */
+  
   /* ---- type ---- */
   --font-display: 'Space Grotesk', 'Inter', sans-serif;
   --font-body: 'IBM Plex Sans', 'Segoe UI', sans-serif;
@@ -31,31 +38,7 @@
   --body-link-color: var(--ink);
   --body-link-hover-color: var(--blue);
 }
-/* ---- light mode: follows OS/browser preference automatically ---- */
-@media (prefers-color-scheme: light) {
-  :root {
-    /* ---- surfaces ---- */
-    --bg: #f6f7f9;
-    --bg-panel: #ffffff;
-    --bg-panel-raised: #eef0f4;
-    --bg-panel-hover: #e4e7ee;
-    /* ---- ink ---- */
-    --ink: #12151b;
-    --ink-muted: #565e6d;
-    --ink-faint: #88909c;
-    /* ---- accents ---- */
-    --blue: #1a89a3;
-    --blue-dim: #4fa3ba;
-    --blue-wash: rgba(26, 137, 163, 0.08);
-    --brass: #a1741f;
-    --brass-dim: #c2954a;
-    --brass-wash: rgba(161, 116, 31, 0.1);
-    /* ---- lines ---- */
-    --rule: rgba(18, 21, 27, 0.08);
-    --rule-strong: rgba(18, 21, 27, 0.16);
-    --grid-line: rgba(26, 137, 163, 0.06);
-  }
-}
+
 * {
   box-sizing: border-box;
   padding: 0;

@@ -37,7 +37,7 @@ const EDUCATION = [
     degree: 'Indian School Certificate (ISC), Class XII',
     school: 'Anand Niketan Shilaj, Ahmedabad',
     period: 'Completed 2023',
-    detail: 'Science stream — Physics, Chemistry, Mathematics',
+    detail: 'Science (Physics, Chemistry, Mathematics) · School Vice President · Annual Function Backstage Head · 3rd, Interschool Art Competition · Cartoonist, Model United Nations · 3rd, Quiz Competition · Finaslist, Extempore · Finalist, Declamation · Science Carnival Coordinator · 1st Best out of Waste competition · 1st, National Computer Olympiad · Respect for Others Award · Respect for Self Award · Respect for Property Award · 100% Attendance for 7 years',
   },
 ]
 
@@ -58,56 +58,37 @@ export default function About() {
         <header className={styles.header}>
           <h1>About</h1>
           <p className={styles.intro}>
-            Three chapters, more or less, how a curious kid ended up running CFD on snow.
+            What makes me different?<br />
+            Four chapters, more or less, how a curious kid ended up running CFD on snow.
           </p>
         </header>
 
         <div className={styles.bioGrid}>
           <article className={styles.bioBlock}>
-            <span className={styles.bioLabel}>01 &middot; Origins</span>
+            <span className={styles.bioLabel}>01 &middot; Origins & Ethos</span>
             <p>
-              I started programming in seventh grade, scribbling code into notebooks because the
-              family computer crashed too often to trust it with unsaved work. That same restlessness
-              showed up everywhere else &mdash; I read physics chapters that weren&apos;t on the
-              syllabus, built models for school science fairs, and spent a stretch of high school
-              tracking down anyone who could teach me how model rockets actually fly. On my first day
-              at Pandit Deendayal Energy University, that hunt turned into a research assistantship: a
-              professor building a real-time monitoring system for laser powder bed fusion of
-              biocompatible magnesium implants took a chance on a first-year who clearly wanted in. I
-              stayed on that project for two years, and I haven&apos;t really stopped since.
+              I started programming in seventh grade, scribbling code into notebooks because the family computer crashed too often to trust it with unsaved work. I don&apos;t claim to have special intelligence; my progress stems from relentless hard work and a Feynman-like enthusiasm for figuring things out. I spent high school tracking down anyone who could teach me how model rockets actually fly. On my first day at Pandit Deendayal Energy University, that zeal turned into a research assistantship: a professor building a real-time monitoring system for 3D printing biocompatible magnesium implants took a chance on a first-year who clearly wanted in. Starting research on day one was a lucky head start, and I haven&apos;t stopped running since.
             </p>
           </article>
 
           <article className={styles.bioBlock}>
-            <span className={styles.bioLabel}>02 &middot; Research</span>
+            <span className={styles.bioLabel}>02 &middot; Multidisciplinary Joy</span>
             <p>
-              My work now sits at the intersection of Design, Manufacturing, and Thermal engineering
-              &mdash; the three pillars of mechanical engineering. I use
-              CFD to treat snow as a granular fluid with Bingham plastic behavior and design lattice structures that reduce avalanche
-              impact, a project that won the Bhalodia&ndash;Khetan Research Excellence Award at IIT
-              Gandhinagar and that I&apos;ve since continued as an undergraduate research fellow. In
-              parallel, I&apos;m developing TPMS-based heat exchanger geometries to reduce pressure drop
-              without sacrificing heat transfer, and pointing that same design instinct at biomedical
-              engineering &mdash; including a 3D-printed mandibular implant technique, tested
-              successfully on a tumour patient, that avoids the need for a bone graft. I don&apos;t
-              think research is really about the paper count; it&apos;s about building things that
-              hold up when it matters.
+              My guiding rule is simple: I only pursue what is fun and brings me happiness, which allows me to pour my absolute best into my work. This pure joy drives my multidisciplinary reach, helping me achieve high-level output across design, thermal engineering, fluids, CFD, biomechanics, structural, and even soil mechanics. Whether I&apos;m treating snow as a granular fluid for avalanche-reducing structures (winning IIT Gandhinagar&apos;s Bhalodia&ndash;Khetan Award), developing TPMS heat exchangers, or engineering 3D-printed mandibular implants that avoid bone grafts, I don&apos;t care about paper counts. I care about the thrill of building things that hold up when it matters.
             </p>
           </article>
 
           <article className={styles.bioBlock}>
-            <span className={styles.bioLabel}>03 &middot; Beyond the lab</span>
+            <span className={styles.bioLabel}>03 &middot; The Creative Mind</span>
             <p>
-              None of this happens in isolation. I lead the technical side of Apogee3, PDEU&apos;s
-              aerospace society, and Team Zenith, where I&apos;ve spent three years on propulsion, structural design,
-              and systems engineering for competition rockets &mdash; and learned nearly as much about
-              budgets and team management as I did about thrust curves. I&apos;ve played competitive
-              lawn tennis for fifteen years and now serve as the university&apos;s Tennis Secretary; I
-              trained in Karate long enough to push past being scared of it and take home a
-              state-level bronze. I paint, worse on some days and better on others, ever since art
-              classes at the Kanoria Centre first taught me to see problems as shapes. Somewhere
-              between the CFD solver, the tennis court, and the sketchbook, curiosity has turned out to
-              be the only throughline I need.
+              I visualize engineering problems differently because my foundation is in Fine Arts. I&apos;ve been painting since I was three years old, earning numerous certifications and presenting in exhibitions throughout my life. That lifelong immersion didn&apos;t just build early confidence and communication skills; it trained me to seamlessly combine my left and right brain. Whether I&apos;m looking at a complex CFD solver or a blank sketchbook, my time at the Kanoria Centre taught me to approach rigid technical challenges with a highly creative, imaginative mindset, seeing problems purely as shapes and possibilities.
+            </p>
+          </article>
+
+          <article className={styles.bioBlock}>
+            <span className={styles.bioLabel}>04 &middot; Calculated Risks</span>
+            <p>
+              I don&apos;t fear taking calculated risks, whether that means picking up a textbook to conquer a brand new research field, taking home a state-level bronze in Karate, or playing an aggressive, attacking game in competitive lawn tennis even when I am losing. Beyond serving as university Tennis Secretary and leading Team Zenith&apos;s rocketry engineering, I seek out extreme environments. High-altitude trekking taught me what no classroom could: true self-exploration, survival in -20&deg;C weather with barefoot river crossings, and, most importantly, the leadership and teamwork required to step up and help others when conditions are unforgiving.
             </p>
           </article>
         </div>
