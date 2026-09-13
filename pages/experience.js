@@ -82,7 +82,7 @@ const ACTIVE_PROJECTS = [
     points: [
       'Designed and 3D-printed a patient-specific mandibular implant technique that removes the need for a bone graft entirely',
       'Applied and tested successfully in a live case — a tumour patient',
-      'Conference paper under review at ICBME 2026, National University of Singapore',
+      'Conference paper under review at ICRAMIE 2027, National Institute of Technology, Warangal',
     ],
     stage: { currentIndex: 4, complete: false },
   },

@@ -8,7 +8,7 @@ const GROUPS = [
     items: [
       {
         title: 'Property and Composition Dependence of Hot Cracking in LPBF for Different Materials',
-        authors: <><span className={styles.authorHighlight}>Ayush Singh</span>, Chaitya Doshi, Vishvesh Badheka</>,
+        authors: <><span className={styles.authorHighlight}><b>Ayush Singh</b></span>, Chaitya Doshi, Vishvesh Badheka</>,
         venue: 'Conference Paper, IMECE-2025, ASME · Hyderabad',
         doi: 'https://doi.org/10.1115/IMECE-INDIA2025-161260',
       },
@@ -20,17 +20,17 @@ const GROUPS = [
     items: [
       {
         title: 'Predictive ANN Model for Multi-Effect Distillation System Output',
-        authors: <>Rahul Deharkar, Param Soni, <span className={styles.authorHighlight}>Ayush Singh</span></>,
+        authors: <>Rahul Deharkar, Param Soni, <span className={styles.authorHighlight}><b>Ayush Singh</b></span></>,
         venue: 'Conference Paper, ICAWTM-25, Springer-Nature · PDEU',
       },
       {
         title: 'Physics-Aligned Modeling and Multi-Objective Fitness Function Development for Design Optimization of a Batch Reverse Osmosis System',
-        authors: <>Rahul Deharkar, Rasesh Nair, <span className={styles.authorHighlight}>Ayush Singh</span></>,
+        authors: <>Rahul Deharkar, Rasesh Nair, <span className={styles.authorHighlight}><b>Ayush Singh</b></span></>,
         venue: 'Conference Paper, IMECE-2026, ASME · Chennai',
       },
       {
         title: 'Physical Interpretation and Parameter Sensitivity of the Three-Element Windkessel Model, with Implications for Vascular Stenting',
-        authors: <><span className={styles.authorHighlight}>Ayush Singh</span>, Dev Pateliya, Ojas Satbhai, Jnana Ranjan Senapati</>,
+        authors: <><span className={styles.authorHighlight}><b>Ayush Singh</b></span>, Dev Pateliya, Ojas Satbhai, Jnana Ranjan Senapati</>,
         venue: 'Conference Paper, FMFP-2026 · NIT Rourkela',
       },
     ],
@@ -41,12 +41,12 @@ const GROUPS = [
     items: [
       {
         title: '3D-Printed Mandibular Implants Without a Bone Graft: A Novel Surgical Technique',
-        authors: <><span className={styles.authorHighlight}>Ayush Singh</span>, Neev Kansara, Pavan Kumar Gurrala</>,
-        venue: 'Conference Paper, ICBME 2026 · Biomedical Engineering Society · National University of Singapore',
+        authors: <><span className={styles.authorHighlight}><b>Ayush Singh</b></span>, Neev Kansara, Pavan Kumar Gurrala</>,
+        venue: 'Conference Paper, ICRAMIE 2027 · National Institute of Technology, Warangal',
       },
       {
         title: 'Additive Manufacturing of Batteries: Recent Trends and Challenges',
-        authors: <><span className={styles.authorHighlight}>Ayush Singh</span>, Ojas Satbhai</>,
+        authors: <><span className={styles.authorHighlight}><b>Ayush Singh</b></span>, Ojas Satbhai</>,
         venue: 'Conference Paper, ICTEA · PDEU · McMaster University · Toronto Metropolitan University · Yalova University',
       },
     ],
@@ -57,12 +57,12 @@ const GROUPS = [
     items: [
       {
         title: 'Design of Lattice-Based Structures for Mitigating Snow-Avalanche Impact via Granular-Fluid CFD Modeling',
-        authors: <><span className={styles.authorHighlight}>Ayush Singh</span>, Manish Kumar, Pranab Kumar Mohapatra</>,
+        authors: <><span className={styles.authorHighlight}><b>Ayush Singh</b></span>, Manish Kumar, Pranab Kumar Mohapatra</>,
         venue: 'IIT Gandhinagar · targeting journal submission within 6 months',
       },
       {
         title: 'A Novel Design Approach for Pressure Drop Reduction in TPMS-Based Heat Exchangers',
-        authors: <>Neev Kansara, <span className={styles.authorHighlight}>Ayush Singh</span>, Pavan Kumar Gurrala</>,
+        authors: <>Neev Kansara, <span className={styles.authorHighlight}><b>Ayush Singh</b></span>, Pavan Kumar Gurrala</>,
         venue: 'PDEU · targeting journal submission within 6 months',
       },
     ],

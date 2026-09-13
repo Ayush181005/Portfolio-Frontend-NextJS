@@ -20,9 +20,16 @@ const FEATURED = [
     href: '/experience#avalanche-lattice',
   },
   {
+    title: 'Novel TPMS heat exchanger design for pressure drop reduction',
+    org: 'PDEU · Prof. Pavan Gurrala',
+    status: 'CFD Validation Complete',
+    tone: 'live',
+    href: '/experience#tpms-heat-exchanger',
+  },
+  {
     title: '3D-printed mandibular implants, no bone graft',
     org: 'PDEU · Prof. Pavan Gurrala',
-    status: 'Under review, ICBME 2026, NUS Singapore',
+    status: 'Under review, ICRAMIE 2026, NIT Warangal',
     tone: 'live',
     href: '/experience#mandibular-implant',
   },

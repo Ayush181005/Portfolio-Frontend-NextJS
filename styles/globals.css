@@ -1,40 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
 :root {
-  /* --max-width: 1180px;
-  --border-radius: 10px; */
-    /* ---- surfaces ---- */
-  --bg: #F9FAF4; /* Cream base */
-  --bg-panel: #ffffff;
-  --bg-panel-raised: #efefe8;
-  --bg-panel-hover: #e4e5dd;
-  
+  /* ---- surfaces ---- */
+  --bg: #F9F6EF;              /* Cream base */
+  --bg-panel: #FFFFFF;
+  --bg-panel-raised: #F1ECDF;
+  --bg-panel-hover: #E6DFCE;
+
   /* ---- ink ---- */
-  --ink: #4A6163; /* Slate */
-  --ink-muted: #6a888b;
-  --ink-faint: #8daeb1;
-  
+  --ink: #3B2A1A;             /* Espresso */
+  --ink-muted: #6B5A48;
+  --ink-faint: #9C8B78;
+
   /* ---- accents ---- */
-  --blue: #F17A7E; /* Coral Pink Primary */
-  --blue-dim: #d46a6e;
-  --blue-wash: rgba(241, 122, 126, 0.1);
-  --brass: #F9A66C; /* Peach Secondary */
-  --brass-dim: #d48e5c;
-  --brass-wash: rgba(249, 166, 108, 0.15);
-  
+  --blue: #C9974F;            /* Warm gold, primary accent */
+  --blue-dim: #b1813e;
+  --blue-wash: rgba(201, 151, 79, 0.1);
+  --brass: #8C5A2B;           /* Deeper copper-brown, secondary accent */
+  --brass-dim: #744a22;
+  --brass-wash: rgba(140, 90, 43, 0.12);
+
   /* ---- lines ---- */
-  --rule: rgba(74, 97, 99, 0.1);
-  --rule-strong: rgba(74, 97, 99, 0.2);
-  --grid-line: rgba(241, 122, 126, 0.06);
+  --rule: rgba(59, 42, 26, 0.1);
+  --rule-strong: rgba(59, 42, 26, 0.2);
+  --grid-line: rgba(201, 151, 79, 0.06);
 
   --max-width: 1180px;
-  --border-radius: 16px; /* Slightly softer for the retro vibe */
-  
+  --border-radius: 16px;
+
   /* ---- type ---- */
   --font-display: 'Space Grotesk', 'Inter', sans-serif;
   --font-body: 'IBM Plex Sans', 'Segoe UI', sans-serif;
   --font-mono: 'IBM Plex Mono', ui-monospace, 'Courier New', monospace;
   --navbar-height: 76px;
-  /* back-compat aliases for the untouched /gallery page */
+
   --body-link-color: var(--ink);
   --body-link-hover-color: var(--blue);
 }
