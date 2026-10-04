@@ -4,6 +4,7 @@ import styles from '@/styles/Contact.module.css'
 import Link from 'next/link'
 import ReCAPTCHA from 'react-google-recaptcha'
 import { MailIcon, GithubIcon, LinkedinIcon } from '@/components/Icons'
+import Seo from '@/components/Seo'
 
 const Contact = () => {
   const recaptchaRef = useRef(null)
@@ -50,9 +51,11 @@ const Contact = () => {
   return (
     <>
       <Head>
-        <title>Contact | Ayush Singh</title>
-        <meta name="description" content="Get in touch with Ayush Singh for research collaboration, questions, or a game of tennis." />
-        <meta name="robots" content="index, follow" />
+        <Seo
+          title="Contact | Ayush Singh"
+          description="Reach out to Ayush Singh for research collaboration, questions about his work in CFD, additive manufacturing, and biomedical implant design, or just to talk mechanical engineering — or tennis."
+          path="/contact"
+        />
       </Head>
 
       <main className="pageContainer">

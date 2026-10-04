@@ -3,6 +3,7 @@ import Link from 'next/link'
 import styles from '@/styles/Home.module.css'
 import { GithubIcon, LinkedinIcon, MailIcon, InstagramIcon, DownloadIcon, ArrowRightIcon } from '@/components/Icons'
 import Image from 'next/image'
+import Seo from '@/components/Seo'
 
 const STATS = [
   { value: '9.88', unit: '/10', label: 'CPI, 4th year, Mechanical Engineering' },
@@ -46,18 +47,12 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Ayush Singh | Mechanical Engineering Researcher</title>
-        <meta
-          name="description"
-          content="Ayush Singh is a mechanical engineering researcher at PDEU working across granular-flow CFD, TPMS heat exchangers, additive manufacturing, and biomedical implant design, alongside model rocketry leadership and science outreach."
+        <Seo
+          title="Ayush Singh | Mechanical Engineering Researcher"
+          description="Ayush Singh is a mechanical engineering researcher at PDEU, working across granular-flow CFD for avalanche impact mitigation, TPMS-based heat exchanger design, additive manufacturing (LPBF, WAAM), and 3D-printed biomedical implants — while leading PDEU's rocketry team, Team Zenith, and running STEM outreach."
+          keywords="Ayush Singh, Mechanical Engineering, PDEU, CFD, Additive Manufacturing, TPMS, Avalanche Modeling, Biomedical Implants, Research, Team Zenith, Rocketry"
+          path="/"
         />
-        <meta name="keywords" content="Ayush Singh, Mechanical Engineering, PDEU, CFD, Additive Manufacturing, TPMS, Avalanche Modeling, Biomedical Implants, Research" />
-        <meta name="author" content="Ayush Singh" />
-        <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Ayush Singh — Mechanical Engineering Researcher" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.theayush.in/" />
-        <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
       <main>
@@ -83,7 +78,7 @@ export default function Home() {
                   View my research <ArrowRightIcon width={15} height={15} />
                 </Link>
                 <a href="/docs/Ayush Singh CV.pdf" target="_blank" rel="noopener noreferrer" className={styles.btnSecondary}>
-                  <DownloadIcon width={15} height={15} /> Resume
+                  <DownloadIcon width={15} height={15} /> <b>Resume</b>
                 </a>
                 <Link href="/contact" className={styles.btnGhost}>
                   Get in touch

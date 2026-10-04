@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '@/styles/Publications.module.css'
+import Seo from '@/components/Seo'
 
 const GROUPS = [
   {
@@ -73,9 +74,11 @@ export default function Publications() {
   return (
     <>
       <Head>
-        <title>Publications | Ayush Singh</title>
-        <meta name="description" content="Published, accepted, under-review, and in-preparation research papers by Ayush Singh across additive manufacturing, thermal systems, and biomedical design." />
-        <meta name="robots" content="index, follow" />
+        <Seo
+          title="Publications | Ayush Singh"
+          description="Ayush Singh's research papers across additive manufacturing, thermal systems, and biomedical design — including published work on hot cracking in LPBF (ASME IMECE 2025), accepted papers on ANN-based distillation modeling and reverse-osmosis optimization, and papers under review on mandibular implants and 3D-printed batteries."
+          path="/publications"
+        />
       </Head>
 
       <main className="pageContainer">

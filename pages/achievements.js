@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '@/styles/Achievements.module.css'
+import Seo from '@/components/Seo'
 
 const HEADLINE_STATS = [
   { value: '9.88', unit: '/10', label: 'CPI in Mechanical Engineering' },
@@ -66,9 +67,11 @@ export default function Achievements() {
   return (
     <>
       <Head>
-        <title>Achievements | Ayush Singh</title>
-        <meta name="description" content="Awards, scholarships, and certifications earned by Ayush Singh across research, academics, and model rocketry." />
-        <meta name="robots" content="index, follow" />
+        <Seo
+          title="Achievements | Ayush Singh"
+          description="Awards, scholarships, and certifications earned by Ayush Singh — including the ₹50,000 Bhalodia–Khetan Research Excellence Award from IIT Gandhinagar, a 100% merit scholarship worth ₹10.4 lakh, 1st Rank in Mechanical Engineering at PDEU, and selection for IN-SPACe/ISRO's national model rocketry training program."
+          path="/achievements"
+        />
       </Head>
 
       <main className="pageContainer">

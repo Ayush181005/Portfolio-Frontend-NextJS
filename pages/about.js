@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '@/styles/About.module.css'
+import Seo from '@/components/Seo'
 
 const COMPETENCIES = [
   {
@@ -8,7 +9,7 @@ const COMPETENCIES = [
   },
   {
     heading: 'Manufacturing & Fabrication',
-    items: ['LPBF (Intech Additive)', 'WAAM', 'EDM', 'CNC Turning', 'GTAW / GMAW', 'Laser & Ultrasonic Welding', 'FSW', 'Resistance & Plasma Welding', '3D printing', 'Casting', 'Traditional Machining'],
+    items: ['Metal Additive Manufacturing (Michigan)', 'WAAM', 'LPBF (Intech Additive)', 'EDM', 'CNC Turning', 'GTAW / GMAW', 'Laser & Ultrasonic Welding', 'FSW', 'Resistance & Plasma Welding', '3D printing', 'Casting', 'Traditional Machining'],
   },
   {
     heading: 'Programming & Data',
@@ -45,9 +46,11 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About | Ayush Singh</title>
-        <meta name="description" content="Ayush Singh's background — from a first research assistantship in additive manufacturing to CFD, biomedical design, competencies, and education." />
-        <meta name="robots" content="index, follow" />
+        <Seo
+          title="About | Ayush Singh"
+          description="How a seventh-grade coder became a mechanical engineering researcher: from a first research assistantship in laser powder bed fusion of biocompatible magnesium implants to current work in granular-flow CFD, TPMS heat exchangers, and biomedical implant design — plus tennis, karate, and painting along the way."
+          path="/about"
+        />
       </Head>
 
       <main className="pageContainer">

@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, useMemo } from 'react'
 import Head from 'next/head'
 import styles from '@/styles/Birthday.module.css'
+import Seo from '@/components/Seo'
 
 /* ============================================================================
    EDIT ME — everything you'll want to personalize lives in this block.
@@ -324,9 +325,12 @@ export default function Toaahana() {
   return (
     <>
       <Head>
-        <title>To {HER_NAME}</title>
-        <meta name="robots" content="noindex, nofollow" />
-        <meta name="description" content="A private page." />
+        <Seo
+          title={`To ${HER_NAME}`}
+          description="A private page."
+          path="/toaahana"
+          noIndex
+        />
       </Head>
 
       <div className={styles.wrapper}>

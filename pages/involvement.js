@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '@/styles/Involvement.module.css'
+import Seo from '@/components/Seo'
 
 const LEADERSHIP = [
   {
@@ -119,9 +120,11 @@ export default function Involvement() {
   return (
     <>
       <Head>
-        <title>Involvement | Ayush Singh</title>
-        <meta name="description" content="Leadership, coordination, and outreach work by Ayush Singh — rocketry team leadership, science outreach, workshop coordination, and professional memberships." />
-        <meta name="robots" content="index, follow" />
+        <Seo
+          title="Involvement | Ayush Singh"
+          description="Leadership and outreach work by Ayush Singh — Founder & Technical Head of Team Zenith (PDEU's rocketry team), Lawn Tennis Secretary, STEM outreach through SciKnowTech and Tanmaye's Amazing Space, and volunteer work with the Rotary Club of Ahmedabad Shantigram."
+          path="/involvement"
+        />
       </Head>
 
       <main className="pageContainer">

@@ -1,12 +1,18 @@
 import Link from 'next/link'
 import Head from 'next/head'
 import styles from '@/styles/NotFound.module.css'
+import Seo from '@/components/Seo'
 
 export default function Custom404() {
   return (
     <>
       <Head>
-        <title>404 | Ayush Singh</title>
+        <Seo
+          title="404 | Ayush Singh"
+          description="The page you're looking for doesn't exist, or has moved."
+          path="/404"
+          noIndex
+        />
       </Head>
       <main className={styles.wrap}>
         <p className={styles.eyebrow}>

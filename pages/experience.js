@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '@/styles/Experience.module.css'
 import ProjectCard from '@/components/ProjectCard'
+import Seo from '@/components/Seo'
 
 const EXPERIENCE = [
   {
@@ -161,9 +162,11 @@ export default function Experience() {
   return (
     <>
       <Head>
-        <title>Experience & Projects | Ayush Singh</title>
-        <meta name="description" content="Ayush Singh's research experience and project timeline — CFD, additive manufacturing, biomedical design, and thermal systems, tracked from idea to publication." />
-        <meta name="robots" content="index, follow" />
+        <Seo
+          title="Experience & Projects | Ayush Singh"
+          description="A timeline of Ayush Singh's research and engineering work — VOF-based CFD modeling of avalanche flow at IIT Gandhinagar, TPMS heat exchanger design at PDEU, 3D-printed mandibular implants, and systems engineering for rocketry team Team Zenith, tracked stage-by-stage from idea to publication."
+          path="/experience"
+        />
       </Head>
 
       <main className="pageContainer">
