@@ -6,14 +6,12 @@ import Seo from '@/components/Seo'
 export default function Custom404() {
   return (
     <>
-      <Head>
-        <Seo
-          title="404 | Ayush Singh"
-          description="The page you're looking for doesn't exist, or has moved."
-          path="/404"
-          noIndex
-        />
-      </Head>
+      <Seo
+        title="404 | Ayush Singh"
+        description="The page you're looking for doesn't exist, or has moved."
+        path="/404"
+        noIndex
+      />
       <main className={styles.wrap}>
         <p className={styles.eyebrow}>
           <span className={styles.tick}>+</span> Error 404

@@ -324,14 +324,12 @@ export default function Toaahana() {
 
   return (
     <>
-      <Head>
-        <Seo
-          title={`To ${HER_NAME}`}
-          description="A private page."
-          path="/toaahana"
-          noIndex
-        />
-      </Head>
+      <Seo
+        title={`To ${HER_NAME}`}
+        description="A private page."
+        path="/toaahana"
+        noIndex
+      />
 
       <div className={styles.wrapper}>
         <div className={styles.ambientGlow} aria-hidden="true" />

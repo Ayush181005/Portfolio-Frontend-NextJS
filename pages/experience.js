@@ -161,13 +161,11 @@ const EARLIER_WORK = [
 export default function Experience() {
   return (
     <>
-      <Head>
-        <Seo
-          title="Experience & Projects | Ayush Singh"
-          description="A timeline of Ayush Singh's research and engineering work — VOF-based CFD modeling of avalanche flow at IIT Gandhinagar, TPMS heat exchanger design at PDEU, 3D-printed mandibular implants, and systems engineering for rocketry team Team Zenith, tracked stage-by-stage from idea to publication."
-          path="/experience"
-        />
-      </Head>
+      <Seo
+        title="Experience & Projects | Ayush Singh"
+        description="A timeline of Ayush Singh's research and engineering work — VOF-based CFD modeling of avalanche flow at IIT Gandhinagar, TPMS heat exchanger design at PDEU, 3D-printed mandibular implants, and systems engineering for rocketry team Team Zenith, tracked stage-by-stage from idea to publication."
+        path="/experience"
+      />
 
       <main className="pageContainer">
         <p className="sheetLabel">

@@ -9,14 +9,12 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <>
-      <Head>
-        <Seo
-          title="My Work & Achievements | Ayush 🚀📄🎖️"
-          description="Browse CFD notes, research reports, award photos, and key moments from Ayush Singh's journey in mechanical engineering, aerospace, and additive manufacturing — plus his resume and professional achievements, all in one place."
-          keywords="CFD Notes, Research Reports, Resume, Engineering Projects, Aerospace Engineering, Mechanical Engineering, Achievements, Awards, Additive Manufacturing"
-          path="/gallery"
-        />
-      </Head>
+      <Seo
+        title="My Work & Achievements | Ayush 🚀📄🎖️"
+        description="Browse CFD notes, research reports, award photos, and key moments from Ayush Singh's journey in mechanical engineering, aerospace, and additive manufacturing — plus his resume and professional achievements, all in one place."
+        keywords="CFD Notes, Research Reports, Resume, Engineering Projects, Aerospace Engineering, Mechanical Engineering, Achievements, Awards, Additive Manufacturing"
+        path="/gallery"
+      />
 
       <div className={styles.impLinks}>
         <a href="/docs/Ayush Singh CV.pdf" target="_blank">My Resume</a>

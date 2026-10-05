@@ -46,14 +46,12 @@ const FEATURED = [
 export default function Home() {
   return (
     <>
-      <Head>
-        <Seo
-          title="Ayush Singh | Mechanical Engineering Researcher"
-          description="Ayush Singh is a mechanical engineering researcher at PDEU, working across granular-flow CFD for avalanche impact mitigation, TPMS-based heat exchanger design, additive manufacturing (LPBF, WAAM), and 3D-printed biomedical implants — while leading PDEU's rocketry team, Team Zenith, and running STEM outreach."
-          keywords="Ayush Singh, Mechanical Engineering, PDEU, CFD, Additive Manufacturing, TPMS, Avalanche Modeling, Biomedical Implants, Research, Team Zenith, Rocketry"
-          path="/"
-        />
-      </Head>
+      <Seo
+        title="Ayush Singh | Mechanical Engineering Researcher"
+        description="Ayush Singh is a mechanical engineering researcher at PDEU, working across granular-flow CFD for avalanche impact mitigation, TPMS-based heat exchanger design, additive manufacturing (LPBF, WAAM), and 3D-printed biomedical implants — while leading PDEU's rocketry team, Team Zenith, and running STEM outreach."
+        keywords="Ayush Singh, Mechanical Engineering, PDEU, CFD, Additive Manufacturing, TPMS, Avalanche Modeling, Biomedical Implants, Research, Team Zenith, Rocketry"
+        path="/"
+      />
 
       <main>
         <section className={styles.hero}>

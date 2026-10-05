@@ -73,13 +73,11 @@ const GROUPS = [
 export default function Publications() {
   return (
     <>
-      <Head>
-        <Seo
-          title="Publications | Ayush Singh"
-          description="Ayush Singh's research papers across additive manufacturing, thermal systems, and biomedical design — including published work on hot cracking in LPBF (ASME IMECE 2025), accepted papers on ANN-based distillation modeling and reverse-osmosis optimization, and papers under review on mandibular implants and 3D-printed batteries."
-          path="/publications"
-        />
-      </Head>
+      <Seo
+        title="Publications | Ayush Singh"
+        description="Ayush Singh's research papers across additive manufacturing, thermal systems, and biomedical design — including published work on hot cracking in LPBF (ASME IMECE 2025), accepted papers on ANN-based distillation modeling and reverse-osmosis optimization, and papers under review on mandibular implants and 3D-printed batteries."
+        path="/publications"
+      />
 
       <main className="pageContainer">
         <p className="sheetLabel">

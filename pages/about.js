@@ -45,13 +45,11 @@ const EDUCATION = [
 export default function About() {
   return (
     <>
-      <Head>
-        <Seo
-          title="About | Ayush Singh"
-          description="How a seventh-grade coder became a mechanical engineering researcher: from a first research assistantship in laser powder bed fusion of biocompatible magnesium implants to current work in granular-flow CFD, TPMS heat exchangers, and biomedical implant design — plus tennis, karate, and painting along the way."
-          path="/about"
-        />
-      </Head>
+      <Seo
+        title="About | Ayush Singh"
+        description="How a seventh-grade coder became a mechanical engineering researcher: from a first research assistantship in laser powder bed fusion of biocompatible magnesium implants to current work in granular-flow CFD, TPMS heat exchangers, and biomedical implant design — plus tennis, karate, and painting along the way."
+        path="/about"
+      />
 
       <main className="pageContainer">
         <p className="sheetLabel">

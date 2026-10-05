@@ -50,13 +50,11 @@ const Contact = () => {
 
   return (
     <>
-      <Head>
-        <Seo
-          title="Contact | Ayush Singh"
-          description="Reach out to Ayush Singh for research collaboration, questions about his work in CFD, additive manufacturing, and biomedical implant design, or just to talk mechanical engineering — or tennis."
-          path="/contact"
-        />
-      </Head>
+      <Seo
+        title="Contact | Ayush Singh"
+        description="Reach out to Ayush Singh for research collaboration, questions about his work in CFD, additive manufacturing, and biomedical implant design, or just to talk mechanical engineering — or tennis."
+        path="/contact"
+      />
 
       <main className="pageContainer">
         <p className="sheetLabel">

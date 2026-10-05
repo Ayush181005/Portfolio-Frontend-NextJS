@@ -66,13 +66,11 @@ const CERTIFICATIONS = [
 export default function Achievements() {
   return (
     <>
-      <Head>
-        <Seo
-          title="Achievements | Ayush Singh"
-          description="Awards, scholarships, and certifications earned by Ayush Singh — including the ₹50,000 Bhalodia–Khetan Research Excellence Award from IIT Gandhinagar, a 100% merit scholarship worth ₹10.4 lakh, 1st Rank in Mechanical Engineering at PDEU, and selection for IN-SPACe/ISRO's national model rocketry training program."
-          path="/achievements"
-        />
-      </Head>
+      <Seo
+        title="Achievements | Ayush Singh"
+        description="Awards, scholarships, and certifications earned by Ayush Singh — including the ₹50,000 Bhalodia–Khetan Research Excellence Award from IIT Gandhinagar, a 100% merit scholarship worth ₹10.4 lakh, 1st Rank in Mechanical Engineering at PDEU, and selection for IN-SPACe/ISRO's national model rocketry training program."
+        path="/achievements"
+      />
 
       <main className="pageContainer">
         <p className="sheetLabel">

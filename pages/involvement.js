@@ -119,13 +119,11 @@ const MEMBERSHIPS = [
 export default function Involvement() {
   return (
     <>
-      <Head>
-        <Seo
-          title="Involvement | Ayush Singh"
-          description="Leadership and outreach work by Ayush Singh — Founder & Technical Head of Team Zenith (PDEU's rocketry team), Lawn Tennis Secretary, STEM outreach through SciKnowTech and Tanmaye's Amazing Space, and volunteer work with the Rotary Club of Ahmedabad Shantigram."
-          path="/involvement"
-        />
-      </Head>
+      <Seo
+        title="Involvement | Ayush Singh"
+        description="Leadership and outreach work by Ayush Singh — Founder & Technical Head of Team Zenith (PDEU's rocketry team), Lawn Tennis Secretary, STEM outreach through SciKnowTech and Tanmaye's Amazing Space, and volunteer work with the Rotary Club of Ahmedabad Shantigram."
+        path="/involvement"
+      />
 
       <main className="pageContainer">
         <p className="sheetLabel">
