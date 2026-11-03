@@ -34,17 +34,17 @@ const GROUPS = [
         authors: <><span className={styles.authorHighlight}><b>Ayush Singh</b></span>, Dev Pateliya, Ojas Satbhai, Jnana Ranjan Senapati</>,
         venue: 'Conference Paper, FMFP-2026 · NIT Rourkela',
       },
+      {
+        title: '3D-Printed Mandibular Implants Without a Bone Graft: A Novel Surgical Technique',
+        authors: <><span className={styles.authorHighlight}><b>Ayush Singh</b></span>, Neev Kansara, Pavan Kumar Gurrala</>,
+        venue: 'Paper, ICEDMAM 2026',
+      },
     ],
   },
   {
     status: 'Under Review',
     tone: 'live',
     items: [
-      {
-        title: '3D-Printed Mandibular Implants Without a Bone Graft: A Novel Surgical Technique',
-        authors: <><span className={styles.authorHighlight}><b>Ayush Singh</b></span>, Neev Kansara, Pavan Kumar Gurrala</>,
-        venue: 'Conference Paper, ICRAMIE 2027 · National Institute of Technology, Warangal',
-      },
       {
         title: 'Additive Manufacturing of Batteries: Recent Trends and Challenges',
         authors: <><span className={styles.authorHighlight}><b>Ayush Singh</b></span>, Ojas Satbhai</>,

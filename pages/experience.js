@@ -70,22 +70,7 @@ const ACTIVE_PROJECTS = [
       'The specific approach is staying off the record until the paper is out — but it targets lower pressure drop without giving up heat transfer',
       'Novel geometry, novel fabrication path, six months from a journal submission',
     ],
-    stage: { currentIndex: 2, complete: false },
-  },
-  {
-    id: 'mandibular-implant',
-    title: '3D-printed mandibular implants, without a bone graft',
-    field: 'Biomedical · Additive Manufacturing',
-    advisor: 'Prof. Pavan Gurrala, Associate Dean of School of Technology',
-    org: 'PDEU',
-    advisorLink: 'https://orsp.pdpu.ac.in/adminfacviewprofile.aspx?facid=pavan.gurrala',
-    duration: 'Ongoing',
-    points: [
-      'Designed and 3D-printed a patient-specific mandibular implant technique that removes the need for a bone graft entirely',
-      'Applied and tested successfully in a live case — a tumour patient',
-      'Conference paper under review at ICRAMIE 2027, National Institute of Technology, Warangal',
-    ],
-    stage: { currentIndex: 4, complete: false },
+    stage: { currentIndex: 3, complete: false },
   },
   {
     id: 'sma-exoskeleton',
@@ -99,7 +84,7 @@ const ACTIVE_PROJECTS = [
       'Designing a rehabilitation exoskeleton driven by shape memory alloy (SMA) actuators for stroke patients',
       'Currently deep in literature review and actuator characterisation',
     ],
-    stage: { currentIndex: 0, complete: false },
+    stage: { currentIndex: 1, complete: false },
   },
 ]
 
@@ -142,6 +127,21 @@ const COMPLETE_PROJECTS = [
       'Accepted for publication — conference proceedings, IMECE-2026, ASME',
     ],
     stage: { complete: true, completeLabel: 'Accepted · IMECE 2026' },
+  },
+  {
+    id: 'mandibular-implant',
+    title: '3D-printed mandibular implants, without a bone graft',
+    field: 'Biomedical · Additive Manufacturing',
+    advisor: 'Prof. Pavan Gurrala, Associate Dean of School of Technology',
+    org: 'PDEU',
+    advisorLink: 'https://orsp.pdpu.ac.in/adminfacviewprofile.aspx?facid=pavan.gurrala',
+    duration: 'Complete',
+    points: [
+      'Designed and 3D-printed a patient-specific mandibular implant technique that removes the need for a bone graft entirely',
+      'Applied and tested successfully in a live case — a tumour patient',
+      'Paper accepted and recommended for journal at ICEDMAM 2026',
+    ],
+    stage: { currentIndex: 5, complete: true, completeLabel: 'Accepted · ICEDMAM 2026'},
   },
 ]
 

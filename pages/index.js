@@ -30,8 +30,8 @@ const FEATURED = [
   {
     title: '3D-printed mandibular implants, no bone graft',
     org: 'PDEU · Prof. Pavan Gurrala',
-    status: 'Under review, ICRAMIE 2026, NIT Warangal',
-    tone: 'live',
+    status: 'Accepted, ICEDMAM 2026',
+    tone: 'done',
     href: '/experience#mandibular-implant',
   },
   {
@@ -162,7 +162,7 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <span className={styles.figureCaption}>Fig. 1: Ayush presenting his paper on additive manufacturing of batteries at the International Symposium on Battery Technology, ICTEA, 2023 <a href="#ref1">[1]</a></span>
+              <span className={styles.figureCaption}><b>Fig. 1.</b> Ayush presenting his paper on additive manufacturing of batteries at the International Symposium on Battery Technology, ICTEA, 2023 <a href="#ref1">[1]</a></span>
             </div>
           </div>
         </section>
