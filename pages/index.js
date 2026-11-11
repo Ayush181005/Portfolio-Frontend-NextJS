@@ -64,11 +64,9 @@ export default function Home() {
               <h1 className={styles.name}>
                 Hi, I&apos;m <span className={styles.highlight}>Ayush</span>
               </h1>
-              <p className={styles.tagline}>I model how things break, then design them not to.</p>
+              <p className={styles.tagline}>I do what I love most — Science & Trekking.</p>
               <p className={styles.subtext}>
-                I&apos;m a mechanical engineering researcher working across non-Newtonian granular-flow (snow-avalanche) CFD, TPMS
-                heat exchanger design for reduced pressure drop, additive manufacturing, and biomedical implants &mdash; with a
-                parallel life leading a university rocketry team and running science outreach on the side.
+                I&aptos;m a mechanical engineering researcher interested in computational mechanics, non-Newtonian and multiphase flows, architected materials, and biomedical engineering. My work spans snow-avalanche modelling, TPMS heat exchanger design, additive manufacturing, and patient-specific implants. I enjoy moving between theory, computation and experimentation, applying fundamental engineering principles to problems across different domains.
               </p>
 
               <div className={styles.ctaRow}>

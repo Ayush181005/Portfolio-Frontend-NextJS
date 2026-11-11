@@ -11,6 +11,7 @@ const NAV_LINKS = [
   { href: '/publications', label: 'Publications' },
   { href: '/achievements', label: 'Achievements' },
   { href: '/involvement', label: 'Involvement' },
+  { href: '/portfolio', label: 'Portfolio' },
   // { href: '/gallery', label: 'Gallery' },
   { href: '/contact', label: 'Contact' },
 ]
