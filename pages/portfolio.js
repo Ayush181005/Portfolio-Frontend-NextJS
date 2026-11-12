@@ -2,24 +2,18 @@ import { useState, useEffect } from 'react'
 import Seo from '@/components/Seo'
 import styles from '@/styles/Portfolio.module.css'
 
-/*
-  Add a photo later: drop the image in /public/gallery/ and set `photo`
-  to its path. While `photo` is null the card shows an empty frame.
-  TODO (only you can say): materials, dimensions, sensors, test conditions.
-  Search this file for "TODO" to find the spots.
-*/
 const BUILDS = [
   {
     id: 'avalanche',
-    title: 'Avalanche impact test setup',
+    title: 'Avalanche impact test flume setup',
     where: 'IIT Gandhinagar',
     line: 'Experimental setup I fabricated to validate the avalanche CFD model.',
     built: [
       'Fabricated for the lattice-barrier project with Prof. Manish Kumar (Civil Engineering), which began as a two-month SRIP internship in May 2025 and continues as an Undergraduate Research Fellowship.',
+      'Variable flume tilt angle angle with different barrier attachment, 8 mm thickness Plexiglass with metal frame.',
       'Snow is modelled as a Bingham-plastic granular fluid in Ansys Fluent (volume-of-fluid). The rig impact-tests two lattice geometries as energy-dissipating barriers.',
       'CFD validated to within 5% of experimental data; the strongest lattice cut peak impact force by up to 30%.',
       'Won the Bhalodia–Khetan Summer Research Excellence Award (₹50,000), Aug 2025. Manuscript in preparation.',
-      // TODO: flume/chute dimensions, material and scale of the lattice, load cell or sensor used.
     ],
     photo: '/gallery/avalanche-project.jpg'
   },
@@ -27,9 +21,10 @@ const BUILDS = [
     id: 'tpms',
     title: 'TPMS pressure-drop rig',
     where: 'PDEU',
-    line: 'Experimental setup for measuring pressure drop across TPMS heat exchangers.',
+    line: 'Experimental setup for measuring pressure drop across TPMS heat exchangers (made with zero cost).',
     built: [
       'Fabricated alongside CFD validation for the TPMS heat-exchanger project with Prof. Pavan Gurrala.',
+      'Used old high power pump (had to clean and start by opening it), used PVC pipes on old fluid mechanics lab setup, converted a water tank to make recirculation setup',
       'Triply periodic minimal surface geometries as an alternative to fin-and-channel exchangers, aiming for lower pressure drop without losing heat transfer.',
       'CFD validation complete; manuscript in preparation (Kansara, Singh, Gurrala). The specific design approach is withheld until publication.',
       // TODO: how the samples were made (printer, material), pressure sensors, flow range.
@@ -54,7 +49,7 @@ const BUILDS = [
     where: 'PDEU · Team Zenith',
     line: 'Rocket built for the IN-SPACe model rocketry competition held at Kushinagar, India.',
     built: [
-      'I founded Team Zenith and lead it as Technical Head. Airframe and motor-fitting design, trajectory analysis, electronics subsystems and launch-pad design and fabrication were all done in-house.',
+      'I co-founded Team Zenith and worked as systems and analysis engineer (now advisor). Airframe and motor-fitting design, trajectory analysis, electronics subsystems and launch-pad design and fabrication were all done in-house.',
       'Design cleared the Flight Readiness Review; the team was a finalist at the national competition (ISRO / IN-SPACe).',
       'Target: 1 km altitude with a 1 kg payload.',
       'Raised ₹3,00,000 in sponsorship and managed about ₹1 lakh in team funds.',
@@ -63,14 +58,13 @@ const BUILDS = [
   },
   {
     id: 'nozzle',
-    title: 'H-class Rocket Motor',
+    title: 'G-class Rocket Motor',
     where: 'PDEU · Apogee3 Aerospace Society',
     line: 'Reusable solid motor, 3D-printed De Laval nozzle, built and launched in-house.',
     built: [
       'Redesigned the propellant (worked with sugar, black powder and sorbitol-based mixes) and designed an additively manufactured converging–diverging nozzle.',
       'Same thrust with almost half the fuel weight, validated in static-fire tests and launches.',
       'Reusable solid-motor casings; body, motor fittings, electronics and launch pad all made in-house.',
-      // TODO: total impulse, burn time, casing material, nozzle printing process.
     ],
     photo: '/gallery/motor.jpg'
   },
@@ -83,83 +77,89 @@ const BUILDS = [
       'A patient-specific, additively manufactured mandibular implant technique that removes the need for a bone graft after tumour resection (with Prof. Pavan Gurrala).',
       'Used successfully in a live case with a tumour patient.',
       'Paper accepted at ICEDMAM 2026 (Singh, Kansara, Gurrala).',
-      // TODO: implant material and printing process, what you personally designed.
     ],
     photo: '/gallery/implant.jpg'
   },
 ]
 
-/*
-  Gallery moments: text captions with optional photos.
-  `photo: null` = caption only. Set a path once you add the image.
-  (`src` notes are for you; delete them when done.)
-*/
 const MOMENTS = [
   {
-    id: 'ambani',
-    caption: 'Presenting the Apogee model rocketry work to Mukesh Ambani, Chairman of Reliance Industries and President of PDEU.',
-    when: 'Jan 2025',
-    photo: null,
+    id: 'trek',
+    caption: 'The Pin Bhaba Pass (16,000 ft) trek - not completely unrelated to academics and professional life, trekking has shaped me in a way I want to care about people I meet and love the process, major life learnings and team building.',
+    when: 'Jul 2026',
+    photo: 'gallery/trek.JPG',
   },
   {
-    id: 'am-facility',
-    caption: 'Showcasing PDEU’s metal 3D printing facility to the university leadership and Mr. Ambani.',
-    when: 'Jan 2024',
-    photo: null,
+    id: 'volunteering',
+    caption: 'Volunteering at blood donation camp organized in collaboration Red Cross by Rotary Club of Ahmedabad Shantigram.',
+    when: 'Aug 2025',
+    photo: 'gallery/volunteer.jpg',
+  },
+  {
+    id: 'cssi',
+    caption: 'During internship at the Rotary Club of Ahmedabad Shantigram, promoted waste management and segregation and visited 3 government schools to teach about global warming and the need to save the earth.',
+    when: '2024',
+    photo: 'gallery/cssi.jpg',
+  },
+  {
+    id: 'tennis',
+    caption: 'Lawn Tennis Secretary at PDEU, organized various events including flagship Energy cup involving managing more than 150+ participants across tournaments.',
+    when: '2025-2026',
+    photo: 'gallery/tennis.jpg',
+  },
+  {
+    id: 'ambani',
+    caption: 'Presenting the PDEU’s metal 3D printing facility to Mukesh Ambani, Chairman of Reliance Industries and President of PDEU.',
+    when: 'Jan 2025',
+    photo: 'gallery/24.jpg',
   },
   {
     id: 'isro',
     caption: 'ISRO / IN-SPACe model rocketry training at Air Force Station Jalahalli, Bengaluru: 10 days, residential, students selected nationwide.',
     when: 'Nov 2024',
-    photo: null,
+    photo: 'gallery/9.jpg',
   },
   {
     id: 'award',
     caption: 'Receiving the Bhalodia–Khetan Summer Research Excellence Award at IIT Gandhinagar for the avalanche CFD work.',
     when: 'Aug 2025',
-    photo: null,
-  },
-  {
-    id: 'srip',
-    caption: 'Presenting the lattice-barrier poster at the end of the SRIP internship, IIT Gandhinagar.',
-    when: 'Jun 2025',
-    photo: null,
+    photo: 'gallery/SRE.jpg',
   },
   {
     id: 'mech',
     caption: 'Mech-A-Thon podium: 3rd among 45+ teams, with a 16% weight reduction on an aircraft wing spar.',
     when: 'Mar 2025',
-    photo: null,
+    photo: 'gallery/mechathon.jpg',
+  },
+  {
+    id: 'icawtm',
+    caption: 'Presenting at ICAWTM-25 on Predictive Analysis of Multi-Effect Distillation System Using Artificial Neural Networks',
+    when: 'Mar 2025',
+    photo: 'gallery/icawtm.jpg',
   },
   {
     id: 'cfd',
     caption: 'Teaching peer-to-peer CFD workshops (finite-difference and finite-volume with Python) to 100+ BTech, MTech and PhD students.',
-    when: '2024–2025',
-    photo: null,
+    when: '2024-2025',
+    photo: 'gallery/cfdlec.jpg',
   },
   {
     id: 'battery',
-    caption: 'Anchoring and coordinating the 1st International Symposium on Battery Technology, with McMaster, Toronto Metropolitan and Yalova universities.',
+    caption: 'Anchoring, coordinating and presenting at the 1st International Symposium on Battery Technology, with McMaster, Toronto Metropolitan and Yalova universities.',
     when: 'Jan 2024',
-    photo: null,
+    photo: 'gallery/battery.jpg',
   },
   {
     id: 'imece',
     caption: 'Presenting at ASME IMECE-India, on hot cracking in LPBF (Hyderabad, 2025) and batch RO optimisation (Chennai, 2026).',
-    when: '2025–2026',
-    photo: null,
+    when: '2025-2026',
+    photo: 'gallery/imece25.jpg',
   },
   {
     id: 'cince',
     caption: 'Running the metal 3D printing stall at CINCE 2025, Ahmedabad University.',
     when: '2025',
-    photo: null,
-  },
-  {
-    id: 'gusec',
-    caption: 'Guest talk on rockets at Gujarat University’s GUSEC for ISRO Day and Youth Day.',
-    when: 'Nov 2025',
-    photo: null,
+    photo: 'gallery/cince.jpg',
   },
 ]
 
@@ -218,7 +218,7 @@ export default function Portfolio() {
           </p>
           <h2 id="moments-title" className={styles.momentsTitle}>Moments along the way</h2>
           <p className={styles.intro}>
-            Launches, talks, workshops and awards. More on the <a className={styles.pdf} href="/gallery">gallery page</a>.
+            Launches, talks, workshops and awards. Memories on the <a className={styles.pdf} href="/gallery">gallery page</a>.
           </p>
           <div className={styles.momentGrid}>
             {MOMENTS.map((m) => (

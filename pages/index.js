@@ -8,7 +8,7 @@ import Seo from '@/components/Seo'
 const STATS = [
   { value: '9.88', unit: '/10', label: 'CPI, 4th year, Mechanical Engineering' },
   { value: '170 + 147', unit: '= 317 + 3', label: 'GRE Quant + Verbal + AWA' },
-  { value: '#1', unit: ' ₹50,000', label: 'Research Excellence Award, IIT Gandhinagar' },
+  { value: '1st', unit: ' ₹50,000', label: 'Research Excellence Award, IIT Gandhinagar' },
   { value: '3', unit: 'yrs', label: 'Research experience, 7 research projects (published to ongoing)' },
 ]
 
@@ -48,7 +48,7 @@ export default function Home() {
     <>
       <Seo
         title="Ayush Singh | Mechanical Engineering Researcher"
-        description="Ayush Singh is a mechanical engineering researcher at PDEU, working across granular-flow CFD for avalanche impact mitigation, TPMS-based heat exchanger design, additive manufacturing (LPBF, WAAM), and 3D-printed biomedical implants — while leading PDEU's rocketry team, Team Zenith, and running STEM outreach."
+        description="Ayush Singh is a mechanical engineering researcher at PDEU, working across granular-flow CFD for avalanche impact mitigation, TPMS-based heat exchanger design, additive manufacturing (LPBF, WAAM), and 3D-printed biomedical implants, while leading PDEU's rocketry team, Team Zenith, and running STEM outreach."
         keywords="Ayush Singh, Mechanical Engineering, PDEU, CFD, Additive Manufacturing, TPMS, Avalanche Modeling, Biomedical Implants, Research, Team Zenith, Rocketry"
         path="/"
       />
