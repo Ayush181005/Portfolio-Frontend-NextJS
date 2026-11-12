@@ -143,6 +143,35 @@
   transform: translateY(-6.5px) rotate(-45deg);
 }
 
+/* Temporary for college applications, showcasing portfolio */
+.highlighted {
+  background-color: aliceblue;
+  border-radius: 6px;
+  padding: 6px 12px; /* Adjust if your <a> already has padding */
+  cursor: pointer;
+  animation: subtle-pop 2.5s ease-in-out infinite;
+}
+/* Pause the idle animation on hover so your underline + hover state take over cleanly */
+.highlighted:hover {
+  animation: none;
+  background-color: #dceeff;
+}
+.highlighted.active {
+  animation: none;
+  background-color: #dceeff;
+}
+
+@keyframes subtle-pop {
+  0%, 100% {
+    background-color: aliceblue;
+    box-shadow: 0 0 0 0 rgba(0, 119, 204, 0.25);
+  }
+  50% {
+    background-color: #dceeff; /* Slightly deeper blue tint */
+    box-shadow: 0 0 0 5px rgba(0, 119, 204, 0); /* Soft ripple fade-out */
+  }
+}
+
 @media (max-width: 900px) {
   .menu {
     display: flex;

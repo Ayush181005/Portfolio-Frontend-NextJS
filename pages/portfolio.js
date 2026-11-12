@@ -187,12 +187,15 @@ export default function Portfolio() {
 
       <main className="pageContainer">
         <p className="sheetLabel">
-          <span className="tick">+</span> Portfolio
+          <span className="tick">+</span> Drawing Sheet 07 &middot; Portfolio
         </p>
         <header className={styles.header}>
           <h1>Things I&apos;ve built</h1>
           <p className={styles.intro}>
-            The hardware behind the simulations and papers. Select one for details.
+            What gave me the confidence beyond my publications, the tangible things I built.
+          </p>
+          <p>
+            Please feel free to go through the complete site (all drawing sheets), every sheet tells the same story with a different example.
           </p>
           <a className={styles.pdf} href="/docs/Portfolio.pdf" target="_blank" rel="noopener noreferrer">
             Download the full PDF portfolio

@@ -58,7 +58,7 @@ const Contact = () => {
 
       <main className="pageContainer">
         <p className="sheetLabel">
-          <span className="tick">+</span> Drawing Sheet 07 &middot; Contact
+          <span className="tick">+</span> Drawing Sheet 08 &middot; Contact
         </p>
 
         <div className={styles.grid}>

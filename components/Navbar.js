@@ -11,8 +11,7 @@ const NAV_LINKS = [
   { href: '/publications', label: 'Publications' },
   { href: '/achievements', label: 'Achievements' },
   { href: '/involvement', label: 'Involvement' },
-  { href: '/portfolio', label: 'Portfolio' },
-  // { href: '/gallery', label: 'Gallery' },
+  { href: '/portfolio', label: 'Portfolio', highlight:true },
   { href: '/contact', label: 'Contact' },
 ]
 
@@ -53,7 +52,7 @@ const Navbar = () => {
           {NAV_LINKS.map((link) => (
             <li key={link.href} className={styles.listItem}>
               <Link
-                className={`${styles.navbarText} ${location === link.href ? styles.active : ''}`}
+                className={`${styles.navbarText} ${location === link.href ? styles.active : ''} ${link.highlight?styles.highlighted:""}`}
                 href={link.href}
                 onClick={closeNav}
               >
