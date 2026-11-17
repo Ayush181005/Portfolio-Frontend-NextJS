@@ -12,6 +12,9 @@ const UNIVERSITIES = {
   stanford: 'Stanford',
   berkeley: 'UC Berkeley',
   cmu: 'Carnegie Mellon',
+  tamu: 'Texas A&M',
+  uf: 'University of Florida',
+  cornell: 'Cornell',
   gatech: 'Georgia Tech',
 }
 
@@ -377,7 +380,9 @@ export default function Portfolio() {
             <p className={styles.cardMeta}>Drawing Sheet 07 &middot; Welcome Note</p>
             <h2>Dear {welcomeUni} Admissions Committee and Professors,</h2>
             <p className={styles.mitBody}>
-              Thank you for visiting this site. Please feel free to go through the complete site; while the portfolio page does show many things, whole website is an attempt to summarize me and my work :)
+              Thank you for visiting!<br />
+              The portfolio is a glimpse into my academic and research journey, but there's a little more to me than what's on those pages. Feel free to explore the rest of the website as well. It's my attempt to bring together my work, interests, experiences, and the things that have shaped me.<br />
+              I hope you enjoy exploring it!
             </p>
             <button
               type="button"

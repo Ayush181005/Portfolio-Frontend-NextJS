@@ -66,7 +66,7 @@ export default function Home() {
               </h1>
               <p className={styles.tagline}>I do what I love most — Science & Trekking.</p>
               <p className={styles.subtext}>
-                I&aptos;m a mechanical engineering researcher interested in computational mechanics, non-Newtonian and multiphase flows, architected materials, and biomedical engineering. My work spans snow-avalanche modelling, TPMS heat exchanger design, additive manufacturing, and patient-specific implants. I enjoy moving between theory, computation and experimentation, applying fundamental engineering principles to problems across different domains.
+                I&apos;m a mechanical engineering researcher interested in computational mechanics, non-Newtonian and multiphase flows, architected materials, and biomedical engineering. My work spans snow-avalanche modelling, TPMS heat exchanger design, additive manufacturing, and patient-specific implants. I enjoy moving between theory, computation and experimentation, applying fundamental engineering principles to problems across different domains.
               </p>
 
               <div className={styles.ctaRow}>
