@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useRouter } from 'next/router'
 import Seo from '@/components/Seo'
 import styles from '@/styles/Portfolio.module.css'
@@ -9,31 +9,59 @@ const INTRO_VIDEO_ID = 'yQmD5XvbBLw?si=9ebTupjuhrFvGgAP'
 const UNIVERSITIES = {
   mit: 'MIT',
   caltech: 'CalTech',
+  columbia: 'Columbia',
   stanford: 'Stanford',
   berkeley: 'UC Berkeley',
   cmu: 'Carnegie Mellon',
   tamu: 'Texas A&M',
   uf: 'University of Florida',
+  uiuc: 'University of Illinois Urbana-Champaign',
+  purdue: 'Purdue',
+  rochester: 'Rochester Institute of Technology',
   cornell: 'Cornell',
   gatech: 'Georgia Tech',
 }
 
 const TESTIMONIALS = [
+  // {
+  //   id: 'prof-1',
+  //   name: 'Prof. Rajesh Patel',
+  //   designation: 'Director of School of Energy Technology; Professor, Mechanical Engineering, PDEU',
+  //   relation: 'Faculty (Heat Transfer & Fluid Mechanics)',
+  //   photo: '/gallery/RJP.jpg',
+  //   quote: 'Lorem ipsum',
+  // },
+  // {
+  //   id: 'prof-2',
+  //   name: 'Prof. Vivek Patel',
+  //   designation: 'Head of Department & Professor, Mechanical Engineering, PDEU',
+  //   relation: 'Faculty (Cryogenics and Refrigeration & Air Conditioning Laboratory)',
+  //   photo: '/gallery/VVP.jpg',
+  //   quote: 'Lorem ipsum',
+  // },
+  // {
+  //   id: 'prof-3',
+  //   name: 'Prof. Vishvesh Badheka',
+  //   designation: 'Former Dean of Academic Affairs & Professor, Mechanical Engineering, PDEU',
+  //   relation: 'Research Guide (1 paper) & Faculty (Manufacturing Process - I)',
+  //   photo: '/gallery/VJB.jpg',
+  //   quote: 'Lorem ipsum',
+  // },
+  // {
+  //   id: 'prof-4',
+  //   name: 'Prof. Ramesh Guduru',
+  //   designation: 'Associate Professor, Mechanical Engineering, PDEU',
+  //   relation: 'Faculty (Engineering Metallurgy)',
+  //   photo: '/gallery/RMG.jpg',
+  //   quote: 'Lorem ipsum',
+  // },
   {
-    id: 'prof-1',
-    name: 'Prof. Manish Kumar',
-    designation: 'Professor, Civil Engineering · IIT Gandhinagar',
-    relation: 'SRIP & Research Fellowship Advisor',
-    photo: '/testimonials/manish-kumar.jpg',
-    quote: 'Placeholder quote — add the testimonial text provided by your advisor or collaborator here.',
-  },
-  {
-    id: 'prof-2',
-    name: 'Prof. Pavan Gurrala',
-    designation: 'Faculty · PDEU',
-    relation: 'Research Mentor (TPMS & Mandibular Implant)',
-    photo: '/testimonials/pavan-gurrala.jpg',
-    quote: 'Placeholder quote — add the testimonial text provided by your mentor or teammate here.',
+    id: 'prof-5',
+    name: 'Dr. Rahul Deharkar',
+    designation: 'Assistant Professor, Mechanical Engineering, PDEU',
+    relation: 'Research Guide (2 papers) & Faculty (Refrigeration & Air Conditioning)',
+    photo: '/gallery/RHD.jpg',
+    quote: 'Having taught Ayush Refrigeration & Air Conditioning and co-authored two research papers with him on desalination system modeling, I can attest to his bright and driven nature. While spirited and talkative, he possesses a sharp analytical mind deeply interested in the mathematics of complex systems and their practical applications. He consistently maintained high professionalism throughout our collaboration, making him an excellent fit for graduate research.',
   },
 ]
 
@@ -200,6 +228,68 @@ export default function Portfolio() {
   const router = useRouter()
   const [open, setOpen] = useState(null)
   const [welcomeUni, setWelcomeUni] = useState(null)
+  const [testimonialIdx, setTestimonialIdx] = useState(0)
+  const [isPaused, setIsPaused] = useState(false)
+  const [visibleCount, setVisibleCount] = useState(2)
+  const [dragOffset, setDragOffset] = useState(0)
+  const [isDragging, setIsDragging] = useState(false)
+  const dragStartX = useRef(null)
+
+  // Track responsive card count (2 on desktop, 1 on mobile)
+  useEffect(() => {
+    const updateVisible = () => setVisibleCount(window.innerWidth <= 700 ? 1 : 2)
+    updateVisible()
+    window.addEventListener('resize', updateVisible)
+    return () => window.removeEventListener('resize', updateVisible)
+  }, [])
+
+  const maxIdx = Math.max(0, TESTIMONIALS.length - visibleCount)
+
+  useEffect(() => {
+    setTestimonialIdx((prev) => Math.min(prev, maxIdx))
+  }, [maxIdx])
+
+  const prevTestimonial = () => {
+    setTestimonialIdx((prev) => (prev <= 0 ? maxIdx : prev - 1))
+  }
+
+  const nextTestimonial = () => {
+    setTestimonialIdx((prev) => (prev >= maxIdx ? 0 : prev + 1))
+  }
+
+  // Auto-slide testimonials when idle
+  useEffect(() => {
+    if (isPaused || isDragging || maxIdx <= 0) return
+    const timer = setInterval(() => {
+      setTestimonialIdx((prev) => (prev >= maxIdx ? 0 : prev + 1))
+    }, 5000)
+    return () => clearInterval(timer)
+  }, [isPaused, isDragging, maxIdx])
+
+  const handlePointerDown = (e) => {
+    if (e.button !== undefined && e.button !== 0) return
+    dragStartX.current = e.clientX
+    setIsDragging(true)
+    setIsPaused(true)
+    e.currentTarget.setPointerCapture?.(e.pointerId)
+  }
+
+  const handlePointerMove = (e) => {
+    if (!isDragging || dragStartX.current === null) return
+    setDragOffset(e.clientX - dragStartX.current)
+  }
+
+  const handlePointerEnd = (e) => {
+    if (!isDragging || dragStartX.current === null) return
+    const deltaX = e.clientX - dragStartX.current
+    dragStartX.current = null
+    setIsDragging(false)
+    setDragOffset(0)
+    if (Math.abs(deltaX) > 45) {
+      if (deltaX < 0) nextTestimonial()
+      else prevTestimonial()
+    }
+  }
 
   // Trigger Admissions modal when ?user=<slug> matches a key in UNIVERSITIES
   useEffect(() => {
@@ -232,6 +322,10 @@ export default function Portfolio() {
       document.body.style.overflow = ''
     }
   }, [open, welcomeUni])
+
+  // Step percentage accounts for the 22px gap between cards
+  const stepPct = visibleCount === 2 ? 50 : 100
+  const gapPx = visibleCount === 2 ? 11 : 0
 
   return (
     <>
@@ -295,7 +389,7 @@ export default function Portfolio() {
           ))}
         </div>
 
-        {/* ---- 3. Testimonials Section ----
+        {/* ---- 3. Testimonials Section ---- */}
         {TESTIMONIALS.length > 0 && (
           <section className={styles.testimonials} aria-labelledby="testimonials-title">
             <p className="sheetLabel">
@@ -303,34 +397,109 @@ export default function Portfolio() {
             </p>
             <h2 id="testimonials-title" className={styles.sectionTitle}>Notes from mentors &amp; collaborators</h2>
             <p className={styles.intro}>
-              Words from professors, advisors, and teammates I have worked alongside.
+              Words from professors, advisors, and teammates I have worked alongside.<br />
+              My supervisors from major projects, <a href="mailto:mkumar@iitgn.ac.in">Prof. Manish Kumar</a>, <a href="mailto:Pavan.Gurrala@sot.pdpu.ac.in">Prof. Pavan Gurrala</a>, <a href="mailto:Pravesh.Kumar@sot.pdpu.ac.in">Dr. Pravesh Kumar</a>, and <a href="mailto:Ojas.S@sot.pdpu.ac.in">Dr. Ojas Satbhai</a> are providing me a full recommendation; please contact them through email for a complete recommendation. This is just a small testimonial section.
             </p>
-            <div className={styles.testimonialGrid}>
-              {TESTIMONIALS.map((t) => (
-                <article key={t.id} className={styles.testimonialCard}>
-                  <blockquote className={styles.testimonialQuote}>
-                    &ldquo;{t.quote}&rdquo;
-                  </blockquote>
-                  <div className={styles.testimonialAuthor}>
-                    {t.photo && (
-                      <img
-                        src={t.photo}
-                        alt={t.name}
-                        className={styles.avatar}
-                        loading="lazy"
-                      />
-                    )}
-                    <div className={styles.authorInfo}>
-                      <strong className={styles.authorName}>{t.name}</strong>
-                      <span className={styles.authorDesignation}>{t.designation}</span>
-                      <span className={styles.authorRelation}>{t.relation}</span>
-                    </div>
-                  </div>
-                </article>
-              ))}
+            <div
+              className={styles.carouselWrapper}
+              onMouseEnter={() => setIsPaused(true)}
+              onMouseLeave={() => {
+                if (!isDragging) setIsPaused(false)
+              }}
+              onFocus={() => setIsPaused(true)}
+              onBlur={() => setIsPaused(false)}
+            >
+              <div className={styles.carouselControls}>
+                <button
+                  type="button"
+                  className={styles.carouselBtn}
+                  onClick={prevTestimonial}
+                  aria-label="Previous testimonial"
+                >
+                  &larr;
+                </button>
+                <div className={styles.carouselDots}>
+                  {Array.from({ length: maxIdx + 1 }).map((_, idx) => (
+                    <button
+                      key={idx}
+                      type="button"
+                      className={`${styles.carouselDot} ${idx === testimonialIdx ? styles.carouselDotActive : ''}`}
+                      onClick={() => setTestimonialIdx(idx)}
+                      aria-label={`Go to testimonial slide ${idx + 1}`}
+                    />
+                  ))}
+                </div>
+                <button
+                  type="button"
+                  className={styles.carouselBtn}
+                  onClick={nextTestimonial}
+                  aria-label="Next testimonial"
+                >
+                  &rarr;
+                </button>
+              </div>
+
+              <div
+                className={styles.testimonialViewport}
+                style={{
+                  overflow: 'hidden',
+                  width: '100%',
+                  cursor: 'default',
+                  userSelect: 'none',
+                  touchAction: 'pan-y',
+                }}
+                onPointerDown={handlePointerDown}
+                onPointerMove={handlePointerMove}
+                onPointerUp={handlePointerEnd}
+                onPointerCancel={handlePointerEnd}
+              >
+                <div
+                  className={styles.testimonialTrack}
+                  style={{
+                    display: 'flex',
+                    flexDirection: 'row',
+                    flexWrap: 'nowrap',
+                    gap: '22px',
+                    willChange: 'transform',
+                    transform: `translate3d(calc(-${testimonialIdx * stepPct}% - ${testimonialIdx * gapPx}px + ${dragOffset}px), 0, 0)`,
+                    transition: isDragging ? 'none' : 'transform 0.45s cubic-bezier(0.22, 1, 0.36, 1)',
+                  }}
+                >
+                  {TESTIMONIALS.map((t) => (
+                    <article
+                      key={t.id}
+                      className={styles.testimonialCard}
+                      style={{
+                        flex: visibleCount === 2 ? '0 0 calc((100% - 22px) / 2)' : '0 0 100%',
+                        minWidth: 0,
+                      }}
+                    >
+                      <blockquote className={styles.testimonialQuote}>
+                        &ldquo;{t.quote}&rdquo;
+                      </blockquote>
+                      <div className={styles.testimonialAuthor}>
+                        {t.photo && (
+                          <img
+                            src={t.photo}
+                            alt={t.name}
+                            className={styles.avatar}
+                            loading="lazy"
+                            draggable="false"
+                          />
+                        )}
+                        <div className={styles.authorInfo}>
+                          <strong className={styles.authorName}>{t.name}</strong>
+                          <span className={styles.authorDesignation}>{t.designation}</span>
+                          <span className={styles.authorRelation}>{t.relation}</span>
+                        </div>
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              </div>
             </div>
           </section>
-        )} */}
+        )}
 
         {/* ---- 4. Gallery Moments ---- */}
         <section className={styles.moments} aria-labelledby="moments-title">

@@ -80,11 +80,56 @@
 .testimonials {
   margin-top: 64px;
 }
-.testimonialGrid {
+.carouselWrapper {
+  margin-top: 20px;
+}
+.carouselControls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+.carouselBtn {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  cursor: pointer;
+  padding: 6px 14px;
+  color: var(--ink-muted);
+  background: var(--bg-panel);
+  border: 1px solid var(--rule);
+  border-radius: calc(var(--border-radius) - 4px);
+  transition: border-color 0.15s, color 0.15s;
+}
+.carouselBtn:hover {
+  color: var(--blue);
+  border-color: var(--blue);
+}
+.carouselDots {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.carouselDot {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  background: var(--rule-strong);
+  border: none;
+  transition: background-color 0.15s, transform 0.15s;
+}
+.carouselDotActive {
+  background: var(--brass);
+  transform: scale(1.25);
+}
+.testimonialCarousel {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 22px;
-  margin-top: 20px;
+  cursor: default;
+  user-select: none;
+  touch-action: pan-y;
 }
 .testimonialCard {
   display: flex;
@@ -95,6 +140,7 @@
   background: var(--bg-panel);
   border: 1px solid var(--rule);
   border-radius: var(--border-radius);
+  animation: fade 0.2s ease-out;
 }
 .testimonialQuote {
   margin: 0;
@@ -235,12 +281,13 @@
 
 @keyframes fade { from { opacity: 0; } }
 @keyframes rise { from { opacity: 0; transform: translateY(10px); } }
-@media (prefers-reduced-motion: reduce) { .backdrop, .modal { animation: none; } }
+@media (prefers-reduced-motion: reduce) { .backdrop, .modal, .testimonialCard { animation: none; } }
 @media (max-width: 900px) { .momentGrid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 700px) {
   .grid,
-  .testimonialGrid,
+  .testimonialCarousel,
   .momentGrid { grid-template-columns: 1fr; }
+  .testimonialSecondary { display: none; }
 }
 
 .textHighlighted {
