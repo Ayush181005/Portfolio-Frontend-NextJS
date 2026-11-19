@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import Seo from '@/components/Seo'
 import styles from '@/styles/Portfolio.module.css'
 
-const INTRO_VIDEO_ID = 'yQmD5XvbBLw?si=9ebTupjuhrFvGgAP'
+const INTRO_VIDEO_ID = 'cWGoS7SYQ84'
 
 // Map URL slugs (?user=...) to formatted university display names
 const UNIVERSITIES = {
