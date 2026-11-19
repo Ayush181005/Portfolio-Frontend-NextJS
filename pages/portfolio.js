@@ -362,7 +362,7 @@ export default function Portfolio() {
             <p className="sheetLabel">
               <span className="tick">+</span> Introduction
             </p>
-            <h2 id="intro-video-title" className={styles.sectionTitle}>A brief introduction (A new video will be added soon)</h2>
+            <h2 id="intro-video-title" className={styles.sectionTitle}>A brief introduction on my research thoughts</h2>
             <div className={styles.videoFrame}>
               <iframe
                 src={`https://www.youtube-nocookie.com/embed/${INTRO_VIDEO_ID}?rel=0`}
